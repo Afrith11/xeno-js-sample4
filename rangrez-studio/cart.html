@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Bag | RANGREZ STUDIO Contemporary Indian Couture</title>
+  <meta name="description" content="Review your curated couture silhouettes in your Rangrez Studio shopping bag. Enjoy complimentary insured express delivery across India and worldwide.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪷</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" role="complementary" aria-label="Announcement">
+    <span>CELEBRATING THE ART OF INDIAN DRESSING.</span>
+  </aside>
+
+  <!-- Sticky Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      
+      <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open mobile navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav class="header-nav-left" aria-label="Primary Navigation">
+        <a href="shop.html" class="nav-link">Discover</a>
+        <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+        <a href="contemporary-ethnic.html" class="nav-link">Clothing</a>
+        <a href="festive-collection.html" class="nav-link">Collections</a>
+      </nav>
+
+      <div class="header-brand-center">
+        <a href="index.html" class="brand-link" aria-label="Rangrez Studio Home">
+          <span class="brand-wordmark">RANGREZ STUDIO</span>
+          <span class="brand-wordmark-sub">COUTURE · ATELIER</span>
+        </a>
+      </div>
+
+      <div class="header-nav-right">
+        <button type="button" class="header-action-btn open-search-trigger" aria-label="Search silhouettes">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span class="header-action-label">Search</span>
+        </button>
+
+        <button type="button" class="header-action-btn open-wishlist-trigger" aria-label="View Saved Wishlist">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span class="header-action-label">Wishlist</span>
+          <span class="badge-count wishlist-count-badge" style="display: none;">0</span>
+        </button>
+
+        <button type="button" class="header-action-btn" aria-label="Shopping Bag">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="header-action-label">Bag</span>
+          <span class="badge-count cart-count-badge" style="display: none;">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <span class="brand-wordmark" style="font-size: 1.15rem;">RANGREZ STUDIO</span>
+      <button type="button" class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="shop.html" class="mobile-nav-link">Shop All</a></li>
+      <li><a href="new-arrivals.html" class="mobile-nav-link">The New India Edit</a></li>
+      <li><a href="contemporary-ethnic.html" class="mobile-nav-link">Contemporary Ethnic</a></li>
+      <li><a href="festive-collection.html" class="mobile-nav-link">Festive Stories</a></li>
+      <li><a href="about.html" class="mobile-nav-link">Our Story &amp; Atelier</a></li>
+      <li><a href="journal.html" class="mobile-nav-link">Style Journal</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Concierge &amp; Appointments</a></li>
+      <li><a href="cart.html" class="mobile-nav-link is-active">Shopping Bag (<span class="cart-count-badge">0</span>)</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <span class="mobile-concierge-phone">BESPOKE CONCIERGE: +91 11 4982 7100</span>
+      <p class="mobile-atelier-loc">Ateliers in Mehrauli, New Delhi &amp; Kala Ghoda, Mumbai.</p>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">YOUR ATELIER SELECTION</span>
+        <h1 class="page-hero-title">Shopping Bag</h1>
+        <p class="page-hero-desc">
+          Review your chosen silhouettes before we initiate bespoke hand-finishing and complimentary express dispatch.
+        </p>
+
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <ul class="breadcrumb-list" style="justify-content: center;">
+            <li><a href="index.html">Home</a></li>
+            <li class="breadcrumb-sep">/</li>
+            <li><a href="shop.html">Shop</a></li>
+            <li class="breadcrumb-sep">/</li>
+            <li class="breadcrumb-current">Shopping Bag</li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Cart Contents Section -->
+    <section class="cart-page-section">
+      <div class="container-wide">
+        
+        <!-- Empty State Container -->
+        <div id="cart-empty-view" style="display: none; text-align: center; padding: 5rem 1rem;">
+          <div class="empty-icon-wrap" style="color: var(--color-sand-muted); margin-bottom: 1.5rem;">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          </div>
+          <h2 style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--color-brown); margin-bottom: 0.5rem;">Your Shopping Bag is Currently Unfilled</h2>
+          <p style="font-size: 1rem; color: var(--color-text-secondary); max-width: 520px; margin: 0 auto 2rem; line-height: 1.6;">
+            Discover our contemporary Indian couture edits and invite the tactile magic of handloom Chanderi and Banarasi silk into your wardrobe.
+          </p>
+          <a href="shop.html" class="btn btn-terracotta">EXPLORE ALL SILHOUETTES</a>
+        </div>
+
+        <!-- Active Cart Layout -->
+        <div id="cart-active-view" class="cart-layout">
+          
+          <!-- Left Column: Item List -->
+          <div class="cart-table-card">
+            <div class="cart-table-header">
+              <span>SILHOUETTE</span>
+              <span>PRICE</span>
+              <span>QUANTITY</span>
+              <span style="text-align: right;">SUBTOTAL</span>
+              <span></span>
+            </div>
+
+            <div id="cart-items-rows">
+              <!-- Dynamically populated via JS -->
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--color-border); flex-wrap: wrap; gap: 1rem;">
+              <a href="shop.html" class="editorial-link">&larr; CONTINUE DISCOVERING</a>
+              <button type="button" class="btn btn-sm btn-outline" onclick="window.rangrezCart.clear(); renderCartPage();">CLEAR BAG</button>
+            </div>
+          </div>
+
+          <!-- Right Column: Order Summary & Privilege Vouchers -->
+          <div class="cart-order-summary">
+            <h2 class="summary-heading">Order Summary</h2>
+
+            <div class="drawer-summary" style="margin-bottom: 1.5rem;">
+              <div class="summary-line">
+                <span>Items Subtotal</span>
+                <span class="summary-val" id="summary-subtotal">₹0</span>
+              </div>
+              <div class="summary-line" id="summary-discount-row" style="display: none;">
+                <span id="summary-discount-label">Privilege Voucher</span>
+                <span class="summary-val text-terracotta" id="summary-discount-val">-₹0</span>
+              </div>
+              <div class="summary-line">
+                <span>Insured Express Shipping</span>
+                <span class="summary-val text-success">Complimentary</span>
+              </div>
+              <div class="summary-line">
+                <span>Atelier Gift Ribboning</span>
+                <span class="summary-val text-success">Complimentary</span>
+              </div>
+              <div class="summary-line">
+                <span>Taxes &amp; Duties</span>
+                <span class="summary-val">Included</span>
+              </div>
+              <div class="summary-line summary-grand-total">
+                <span>Estimated Total</span>
+                <span class="grand-val" id="summary-total">₹0</span>
+              </div>
+            </div>
+
+            <!-- Privilege Voucher Input -->
+            <div style="border-top: 1px solid var(--color-border); padding-top: 1.5rem; margin-bottom: 1.5rem;">
+              <span class="subfilter-label">ATELIER PRIVILEGE CODE:</span>
+              <div class="promo-form-wrap">
+                <input type="text" id="promo-code-input" class="promo-input" placeholder="e.g. RANGREZ10, FESTIVE">
+                <button type="button" class="btn btn-sm btn-primary" id="apply-promo-btn">APPLY</button>
+              </div>
+              <div id="promo-status-msg" class="promo-status-msg"></div>
+              <p style="font-size: 0.72rem; color: var(--color-text-muted);">
+                Valid codes: <strong>RANGREZ10</strong> (10% off), <strong>FESTIVE</strong> (₹2,500 off), or <strong>FIRSTEDIT</strong> (15% off).
+              </p>
+            </div>
+
+            <button type="button" class="btn btn-terracotta btn-full" id="open-checkout-modal-btn" style="height: 52px; font-size: 0.85rem;">
+              PROCEED TO SECURE CHECKOUT &rarr;
+            </button>
+
+            <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.75rem; color: var(--color-text-secondary);">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span>Bank-grade 256-bit encryption &amp; secure checkout</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Complimentary 14-day exchange &amp; in-salon alterations</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Luxury Checkout Flow Modal -->
+  <div class="checkout-modal" id="checkout-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="qv-backdrop" onclick="closeCheckoutModal()"></div>
+    <div class="checkout-dialog">
+      <button type="button" class="qv-close-btn" onclick="closeCheckoutModal()">&times;</button>
+      
+      <!-- Checkout Form Content -->
+      <div id="checkout-form-container">
+        <div class="checkout-step-nav">
+          <div class="step-indicator is-active">
+            <span>01</span>
+            <span>SHIPPING &amp; CONCIERGE</span>
+          </div>
+          <div class="step-indicator">
+            <span>02</span>
+            <span>PAYMENT PRIVILEGE</span>
+          </div>
+          <div class="step-indicator">
+            <span>03</span>
+            <span>CONFIRMATION</span>
+          </div>
+        </div>
+
+        <form id="checkout-submission-form" novalidate>
+          <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--color-brown); margin-bottom: 1.25rem;">Delivery Destination</h3>
+          
+          <div class="checkout-form-grid">
+            <div class="form-group">
+              <label for="chk-first">First Name *</label>
+              <input type="text" id="chk-first" class="form-control" placeholder="e.g. Rohini" required>
+            </div>
+            <div class="form-group">
+              <label for="chk-last">Last Name *</label>
+              <input type="text" id="chk-last" class="form-control" placeholder="e.g. Sen" required>
+            </div>
+            <div class="form-group form-full">
+              <label for="chk-email">Email Address (for order tracking) *</label>
+              <input type="email" id="chk-email" class="form-control" placeholder="e.g. rohini.sen@example.com" required>
+            </div>
+            <div class="form-group form-full">
+              <label for="chk-address">Shipping Street Address *</label>
+              <input type="text" id="chk-address" class="form-control" placeholder="House / Suite number, Street name" required>
+            </div>
+            <div class="form-group">
+              <label for="chk-city">City *</label>
+              <input type="text" id="chk-city" class="form-control" placeholder="e.g. Mumbai" required>
+            </div>
+            <div class="form-group">
+              <label for="chk-pincode">PIN / Postal Code *</label>
+              <input type="text" id="chk-pincode" class="form-control" placeholder="e.g. 400001" required>
+            </div>
+            <div class="form-group form-full">
+              <label for="chk-phone">Contact Telephone *</label>
+              <input type="tel" id="chk-phone" class="form-control" placeholder="e.g. +91 98200 12345" required>
+            </div>
+          </div>
+
+          <h3 style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--color-brown); margin: 1.75rem 0 1rem;">Payment Method</h3>
+          <div class="payment-options-grid">
+            <div class="payment-method-card is-selected" onclick="selectPayment(this)">
+              <input type="radio" name="payment_method" checked style="accent-color: var(--color-terracotta);">
+              <div>
+                <strong style="font-size: 0.85rem; color: var(--color-brown); display: block;">UPI / Net Banking</strong>
+                <span style="font-size: 0.75rem; color: var(--color-text-secondary);">Google Pay, PhonePe, Paytm, All Banks</span>
+              </div>
+            </div>
+            <div class="payment-method-card" onclick="selectPayment(this)">
+              <input type="radio" name="payment_method" style="accent-color: var(--color-terracotta);">
+              <div>
+                <strong style="font-size: 0.85rem; color: var(--color-brown); display: block;">Credit / Debit Card</strong>
+                <span style="font-size: 0.75rem; color: var(--color-text-secondary);">Visa, Mastercard, Amex, RuPay</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="background-color: var(--color-sand-light); padding: 1.25rem; border-radius: var(--radius-xs); margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 0.85rem; color: var(--color-brown);">Total Payable at Dispatch:</span>
+            <strong style="font-size: 1.4rem; color: var(--color-terracotta);" id="chk-payable-amount">₹0</strong>
+          </div>
+
+          <button type="submit" class="btn btn-terracotta btn-full" style="height: 52px;">AUTHORIZE &amp; PLACE ATELIER ORDER</button>
+          <p style="text-align: center; font-size: 0.72rem; color: var(--color-text-muted); margin-top: 0.75rem;">
+            *Frontend demonstration only. No real charges are processed.
+          </p>
+        </form>
+      </div>
+
+      <!-- Order Confirmation Screen (shown after submit) -->
+      <div id="checkout-success-view" class="order-success-screen" style="display: none;">
+        <div class="success-icon-wrap">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </div>
+        <span class="eyebrow">ORDER CONFIRMED</span>
+        <h2 style="font-family: var(--font-serif); font-size: 2.4rem; color: var(--color-brown); margin-bottom: 0.5rem;">Thank You for Your Patronage</h2>
+        <p style="font-size: 0.95rem; color: var(--color-text-secondary); max-width: 540px; margin: 0 auto 1.5rem; line-height: 1.6;">
+          Your artisanal order has been registered at our Mehrauli atelier. Our master craftsmen will prepare your garments with signature silk tissue and bespoke wax sealing.
+        </p>
+
+        <div>
+          <span style="font-size: 0.8rem; color: var(--color-text-muted); display: block;">YOUR ATELIER ORDER REFERENCE:</span>
+          <div class="success-ref-code" id="success-order-ref">RG-2026-89421</div>
+        </div>
+
+        <div style="background-color: var(--color-sand-light); border: 1px solid var(--color-border); border-radius: var(--radius-xs); padding: 1.5rem; max-width: 480px; margin: 1.5rem auto 2.5rem; text-align: left; font-size: 0.85rem;">
+          <p style="margin-bottom: 0.5rem;"><strong>Tracking dispatched to:</strong> <span id="success-client-email">patron@example.com</span></p>
+          <p style="margin-bottom: 0.5rem;"><strong>Estimated Insured Delivery:</strong> 2 to 4 business days</p>
+          <p><strong>Concierge Support:</strong> concierge@rangrezstudio.com</p>
+        </div>
+
+        <div style="display: flex; justify-content: center; gap: 1rem;">
+          <a href="shop.html" class="btn btn-terracotta" onclick="closeCheckoutModal()">CONTINUE EXPLORING</a>
+          <button type="button" class="btn btn-outline" onclick="window.print()">PRINT INVOICE</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container-wide">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <span class="footer-wordmark">RANGREZ STUDIO</span>
+          <span class="footer-tagline">ROOTED IN CULTURE. MADE FOR NOW.</span>
+          <p class="footer-manifesto">
+            An award-winning contemporary Indian couture atelier celebrating generational handloom weaves, master zardozi embroidery, and architectural silhouettes.
+          </p>
+          <p class="footer-flagships">
+            <strong>FLAGSHIP ATELIERS:</strong><br>
+            Kalka Das Marg, Mehrauli, New Delhi · 110030<br>
+            Ropewalk Lane, Kala Ghoda, Mumbai · 400001
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">SHOP SILHOUETTES</h3>
+          <ul class="footer-links">
+            <li><a href="shop.html" class="footer-link">The Complete Catalogue</a></li>
+            <li><a href="new-arrivals.html" class="footer-link">The New India Edit</a></li>
+            <li><a href="contemporary-ethnic.html" class="footer-link">Contemporary Ethnic</a></li>
+            <li><a href="festive-collection.html" class="footer-link">Festive Stories</a></li>
+            <li><a href="shop.html?category=kurtas" class="footer-link">Designer Kurtas</a></li>
+            <li><a href="shop.html?category=sarees" class="footer-link">Modern Sarees</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">THE ATELIER</h3>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">Our Story &amp; Ethos</a></li>
+            <li><a href="about.html#textile-heritage" class="footer-link">Textile Heritage</a></li>
+            <li><a href="about.html#master-artisans" class="footer-link">Master Artisans</a></li>
+            <li><a href="journal.html" class="footer-link">Style Journal</a></li>
+            <li><a href="about.html#timeline" class="footer-link">Atelier Milestones</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">CLIENT CONCIERGE</h3>
+          <ul class="footer-links">
+            <li><a href="contact.html" class="footer-link">Bespoke Appointments</a></li>
+            <li><a href="contact.html#locations" class="footer-link">Atelier Visits</a></li>
+            <li><a href="cart.html" class="footer-link">Shopping Bag</a></li>
+            <li><a href="contact.html#faq" class="footer-link">Shipping &amp; Alterations</a></li>
+            <li><a href="contact.html#faq" class="footer-link">Care Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">CONNECT</h3>
+          <p style="font-size: 0.85rem; color: rgba(233, 216, 197, 0.7); line-height: 1.5; margin-bottom: 1rem;">
+            Follow our seasonal runway presentations and atelier reels.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://pinterest.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><path d="M8 12c0 2 2 3 2 3s-.3 1.2-.5 2.1c-.2.8-.7 1.9-1.5 2.9"></path></svg>
+            </a>
+          </div>
+          <p style="font-size: 0.75rem; color: var(--color-sand-muted); margin-top: 1.5rem;">
+            Concierge Desk:<br>
+            <span style="color: var(--color-sand);">concierge@rangrezstudio.com</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 RANGREZ STUDIO. All rights reserved. Sample 04 Contemporary Indian Luxury Collection.</span>
+        <div class="footer-legal-links">
+          <a href="contact.html#faq">Terms &amp; Bespoke Ordering</a>
+          <a href="contact.html#faq">Privacy &amp; Data Ethics</a>
+          <a href="contact.html#faq">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Dedicated Cart Page Controller Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      renderCartPage();
+      setupPromoActions();
+      setupCheckoutFlow();
+
+      window.addEventListener("rangrez:cart-updated", () => {
+        renderCartPage();
+      });
+
+      window.addEventListener("rangrez:promo-updated", () => {
+        renderCartPage();
+      });
+    });
+
+    function renderCartPage() {
+      const cart = window.rangrezCart ? window.rangrezCart.cart : [];
+      const emptyView = document.getElementById("cart-empty-view");
+      const activeView = document.getElementById("cart-active-view");
+      const itemsContainer = document.getElementById("cart-items-rows");
+
+      if (cart.length === 0) {
+        if (emptyView) emptyView.style.display = "block";
+        if (activeView) activeView.style.display = "none";
+        return;
+      }
+
+      if (emptyView) emptyView.style.display = "none";
+      if (activeView) activeView.style.display = "grid";
+
+      const totals = window.rangrezCart.getTotals();
+
+      // Render Item Rows
+      itemsContainer.innerHTML = cart.map((item, index) => `
+        <div class="cart-row" data-cart-index="${index}">
+          
+          <!-- Product Cell -->
+          <div class="cart-product-cell">
+            <div class="cart-thumb">
+              <img src="${item.image}" alt="${item.name}" loading="lazy">
+            </div>
+            <div class="cart-product-info">
+              <span class="card-category" style="font-size: 0.65rem;">${item.category}</span>
+              <h3><a href="product.html?id=${item.id}">${item.name}</a></h3>
+              <p>Size: <strong>${item.size}</strong> · Colour: <strong>${item.color}</strong></p>
+            </div>
+          </div>
+
+          <!-- Unit Price Cell -->
+          <div class="cart-price-cell" data-label="Price">
+            <span style="font-size: 0.95rem; font-weight: 600; color: var(--color-brown);">${formatINR(item.price)}</span>
+          </div>
+
+          <!-- Quantity Stepper Cell -->
+          <div class="cart-qty-cell" data-label="Quantity">
+            <div class="item-stepper">
+              <button type="button" class="stepper-btn" onclick="window.rangrezCart.updateQuantity(${index}, ${item.quantity - 1})" aria-label="Decrease quantity">&minus;</button>
+              <span class="stepper-value">${item.quantity}</span>
+              <button type="button" class="stepper-btn" onclick="window.rangrezCart.updateQuantity(${index}, ${item.quantity + 1})" aria-label="Increase quantity">&plus;</button>
+            </div>
+          </div>
+
+          <!-- Subtotal Cell -->
+          <div class="cart-total-cell" data-label="Subtotal" style="text-align: right;">
+            <span style="font-size: 1rem; font-weight: 700; color: var(--color-brown);">${formatINR(item.price * item.quantity)}</span>
+          </div>
+
+          <!-- Remove Action Cell -->
+          <div class="cart-remove-cell">
+            <button type="button" class="item-remove-link" onclick="window.rangrezCart.removeItem(${index})" aria-label="Remove item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+          </div>
+
+        </div>
+      `).join("");
+
+      // Update Summary Values
+      document.getElementById("summary-subtotal").textContent = formatINR(totals.subtotal);
+      document.getElementById("summary-total").textContent = formatINR(totals.total);
+      document.getElementById("chk-payable-amount").textContent = formatINR(totals.total);
+
+      const discountRow = document.getElementById("summary-discount-row");
+      const discountVal = document.getElementById("summary-discount-val");
+      const discountLabel = document.getElementById("summary-discount-label");
+
+      if (totals.discount > 0 && window.rangrezCart.promo) {
+        discountRow.style.display = "flex";
+        discountVal.textContent = `-${formatINR(totals.discount)}`;
+        discountLabel.textContent = `Privilege Voucher (${window.rangrezCart.promo.code})`;
+      } else {
+        discountRow.style.display = "none";
+      }
+    }
+
+    function setupPromoActions() {
+      const applyBtn = document.getElementById("apply-promo-btn");
+      const input = document.getElementById("promo-code-input");
+      const statusMsg = document.getElementById("promo-status-msg");
+
+      if (applyBtn && input) {
+        applyBtn.addEventListener("click", () => {
+          const res = window.rangrezCart.applyPromoCode(input.value);
+          statusMsg.textContent = res.message;
+          statusMsg.className = `promo-status-msg ${res.success ? "msg-success" : "msg-error"}`;
+          renderCartPage();
+        });
+      }
+    }
+
+    function setupCheckoutFlow() {
+      const openBtn = document.getElementById("open-checkout-modal-btn");
+      const modal = document.getElementById("checkout-modal");
+      const form = document.getElementById("checkout-submission-form");
+      const formContainer = document.getElementById("checkout-form-container");
+      const successView = document.getElementById("checkout-success-view");
+
+      if (openBtn && modal) {
+        openBtn.addEventListener("click", () => {
+          modal.classList.add("is-open");
+          document.body.classList.add("modal-open");
+          formContainer.style.display = "block";
+          successView.style.display = "none";
+        });
+      }
+
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const first = document.getElementById("chk-first").value.trim();
+          const last = document.getElementById("chk-last").value.trim();
+          const email = document.getElementById("chk-email").value.trim();
+          const address = document.getElementById("chk-address").value.trim();
+          const city = document.getElementById("chk-city").value.trim();
+          const pincode = document.getElementById("chk-pincode").value.trim();
+          const phone = document.getElementById("chk-phone").value.trim();
+
+          if (!first || !last || !email || !address || !city || !pincode || !phone) {
+            window.rangrezCart.showToast("Please complete all shipping address fields.", "info");
+            return;
+          }
+
+          // Generate unique reference ID
+          const randomRef = "RG-2026-" + Math.floor(10000 + Math.random() * 90000);
+          document.getElementById("success-order-ref").textContent = randomRef;
+          document.getElementById("success-client-email").textContent = email;
+
+          // Clear cart
+          window.rangrezCart.clear();
+
+          // Show confirmation screen
+          formContainer.style.display = "none";
+          successView.style.display = "block";
+        });
+      }
+    }
+
+    function selectPayment(el) {
+      document.querySelectorAll(".payment-method-card").forEach(c => c.classList.remove("is-selected"));
+      el.classList.add("is-selected");
+      const radio = el.querySelector("input[type='radio']");
+      if (radio) radio.checked = true;
+    }
+
+    function closeCheckoutModal() {
+      const modal = document.getElementById("checkout-modal");
+      if (modal) {
+        modal.classList.remove("is-open");
+        document.body.classList.remove("modal-open");
+      }
+    }
+  </script>
+
+</body>
+</html>

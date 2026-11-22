@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Journal &amp; Atelier Essays | RANGREZ STUDIO Contemporary Indian Couture</title>
+  <meta name="description" content="Read Rangrez Studio's Style Journal. Critical essays on Indian textile culture, the evolution of modern ethnic silhouettes, and colour psychology.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪷</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" role="complementary" aria-label="Announcement">
+    <span>CELEBRATING THE ART OF INDIAN DRESSING.</span>
+  </aside>
+
+  <!-- Sticky Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      
+      <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open mobile navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav class="header-nav-left" aria-label="Primary Navigation">
+        <a href="shop.html" class="nav-link">Discover</a>
+        <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+        <a href="contemporary-ethnic.html" class="nav-link">Clothing</a>
+        <a href="festive-collection.html" class="nav-link">Collections</a>
+      </nav>
+
+      <div class="header-brand-center">
+        <a href="index.html" class="brand-link" aria-label="Rangrez Studio Home">
+          <span class="brand-wordmark">RANGREZ STUDIO</span>
+          <span class="brand-wordmark-sub">COUTURE · ATELIER</span>
+        </a>
+      </div>
+
+      <div class="header-nav-right">
+        <button type="button" class="header-action-btn open-search-trigger" aria-label="Search silhouettes">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span class="header-action-label">Search</span>
+        </button>
+
+        <button type="button" class="header-action-btn open-wishlist-trigger" aria-label="View Saved Wishlist">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span class="header-action-label">Wishlist</span>
+          <span class="badge-count wishlist-count-badge" style="display: none;">0</span>
+        </button>
+
+        <button type="button" class="header-action-btn open-cart-trigger" aria-label="Shopping Bag">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="header-action-label">Bag</span>
+          <span class="badge-count cart-count-badge" style="display: none;">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <span class="brand-wordmark" style="font-size: 1.15rem;">RANGREZ STUDIO</span>
+      <button type="button" class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="shop.html" class="mobile-nav-link">Shop All</a></li>
+      <li><a href="new-arrivals.html" class="mobile-nav-link">The New India Edit</a></li>
+      <li><a href="contemporary-ethnic.html" class="mobile-nav-link">Contemporary Ethnic</a></li>
+      <li><a href="festive-collection.html" class="mobile-nav-link">Festive Stories</a></li>
+      <li><a href="about.html" class="mobile-nav-link">Our Story &amp; Atelier</a></li>
+      <li><a href="journal.html" class="mobile-nav-link is-active">Style Journal</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Concierge &amp; Appointments</a></li>
+      <li><a href="cart.html" class="mobile-nav-link">Shopping Bag (<span class="cart-count-badge">0</span>)</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <span class="mobile-concierge-phone">BESPOKE CONCIERGE: +91 11 4982 7100</span>
+      <p class="mobile-atelier-loc">Ateliers in Mehrauli, New Delhi &amp; Kala Ghoda, Mumbai.</p>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">THE ATELIER DISPATCH</span>
+        <h1 class="page-hero-title">Style Journal</h1>
+        <p class="page-hero-desc">
+          Reflections on Indian material culture, modern silhouettes, textile histories, and creative direction from the Rangrez design room.
+        </p>
+
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <ul class="breadcrumb-list" style="justify-content: center;">
+            <li><a href="index.html">Home</a></li>
+            <li class="breadcrumb-sep">/</li>
+            <li class="breadcrumb-current">Style Journal</li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Lead Featured Article -->
+    <section class="journal-featured-banner">
+      <div class="container-wide">
+        <div class="featured-article-grid">
+          <div class="featured-article-img">
+            <img src="https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&w=1200&q=85" alt="The New Language of Indian Fashion" loading="lazy">
+          </div>
+          <div class="featured-article-content">
+            <span class="eyebrow">FEATURED COVER ESSAY</span>
+            <h2 style="font-family: var(--font-serif); font-size: 2.4rem; line-height: 1.15; color: var(--color-brown); margin-bottom: 1rem;">
+              The New Language of Indian Fashion
+            </h2>
+            <p style="font-size: 1rem; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+              For decades, luxury Indian couture was defined by the sheer density of its embroidery. Today, an international generation of Indian designers is proving that restraint, proportion, and raw handloom texture can speak far louder than superficial glitter.
+            </p>
+            <button type="button" class="btn btn-terracotta" onclick="openArticleReader(1)">READ FULL ESSAY</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles Grid Section -->
+    <section style="padding: 2rem 0 6rem;">
+      <div class="container-wide">
+        <div class="section-header-editorial">
+          <div>
+            <span class="eyebrow">EDITORIAL ARCHIVE</span>
+            <h2 class="section-title">All Dispatches</h2>
+          </div>
+        </div>
+
+        <div class="journal-grid">
+          
+          <!-- Article 1 -->
+          <article class="journal-card" id="article-1">
+            <div class="journal-visual">
+              <img src="https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&w=800&q=85" alt="The New Language of Indian Fashion" loading="lazy">
+            </div>
+            <div class="journal-meta">
+              <span>CRITICAL ESSAY</span>
+              <span>·</span>
+              <span>6 MIN READ</span>
+            </div>
+            <h3 class="journal-title">The New Language of Indian Fashion</h3>
+            <p class="journal-excerpt">
+              How contemporary Indian designers are stripping away excess to celebrate pure form, organic dyes, and structural drape.
+            </p>
+            <button type="button" class="editorial-link" onclick="openArticleReader(1)">READ ESSAY &rarr;</button>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="journal-card" id="article-2">
+            <div class="journal-visual">
+              <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=85" alt="A Modern Take on Traditional Dressing" loading="lazy">
+            </div>
+            <div class="journal-meta">
+              <span>STYLE GUIDE</span>
+              <span>·</span>
+              <span>5 MIN READ</span>
+            </div>
+            <h3 class="journal-title">A Modern Take on Traditional Dressing</h3>
+            <p class="journal-excerpt">
+              Why the tailored co-ord set, the trench kurta, and the one-minute pre-draped saree are redefining ceremonial dressing across the diaspora.
+            </p>
+            <button type="button" class="editorial-link" onclick="openArticleReader(2)">READ ESSAY &rarr;</button>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="journal-card" id="article-3">
+            <div class="journal-visual">
+              <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=800&q=85" alt="Colours That Tell Stories" loading="lazy">
+            </div>
+            <div class="journal-meta">
+              <span>MATERIAL ARCHIVE</span>
+              <span>·</span>
+              <span>7 MIN READ</span>
+            </div>
+            <h3 class="journal-title">Colours That Tell Stories</h3>
+            <p class="journal-excerpt">
+              The emotional vocabulary of Burnt Terracotta, Sindoor Maroon, and Botanical Marigold in South Asian art, architecture, and dress.
+            </p>
+            <button type="button" class="editorial-link" onclick="openArticleReader(3)">READ ESSAY &rarr;</button>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="journal-card" id="article-4">
+            <div class="journal-visual">
+              <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=85" alt="The Warp and Weft of Chanderi" loading="lazy">
+            </div>
+            <div class="journal-meta">
+              <span>TEXTILE FIELD NOTES</span>
+              <span>·</span>
+              <span>8 MIN READ</span>
+            </div>
+            <h3 class="journal-title">The Warp and Weft of Chanderi</h3>
+            <p class="journal-excerpt">
+              A journey through the historical pit-loom towns of Madhya Pradesh where mulberry silk and twisted zari create luminous gossamer magic.
+            </p>
+            <button type="button" class="editorial-link" onclick="openArticleReader(4)">READ ESSAY &rarr;</button>
+          </article>
+
+          <!-- Article 5 -->
+          <article class="journal-card" id="article-5">
+            <div class="journal-visual">
+              <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=800&q=85" alt="The Geometry of the Saree Drape" loading="lazy">
+            </div>
+            <div class="journal-meta">
+              <span>DESIGN THEORY</span>
+              <span>·</span>
+              <span>5 MIN READ</span>
+            </div>
+            <h3 class="journal-title">The Geometry of the Saree Drape</h3>
+            <p class="journal-excerpt">
+              Investigating the mathematical grace of continuous unstitched fabric, and how modern architecture informs pre-engineered pleating.
+            </p>
+            <button type="button" class="editorial-link" onclick="openArticleReader(5)">READ ESSAY &rarr;</button>
+          </article>
+
+          <!-- Article 6 -->
+          <article class="journal-card" id="article-6">
+            <div class="journal-visual">
+              <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=800&q=85" alt="Caring for Handloom Silks" loading="lazy">
+            </div>
+            <div class="journal-meta">
+              <span>ATELIER CARE</span>
+              <span>·</span>
+              <span>4 MIN READ</span>
+            </div>
+            <h3 class="journal-title">Caring for Handloom Silks</h3>
+            <p class="journal-excerpt">
+              The sacred art of garment longevity: muslin wrapping, lavender sachet preservation, and seasonal airing for generational heirlooms.
+            </p>
+            <button type="button" class="editorial-link" onclick="openArticleReader(6)">READ ESSAY &rarr;</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Article Reader Modal -->
+  <div class="article-reader-modal" id="article-reader-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="qv-backdrop" onclick="closeArticleReader()"></div>
+    <div class="article-reader-dialog">
+      <button type="button" class="qv-close-btn" onclick="closeArticleReader()">&times;</button>
+      <div id="article-reader-content">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container-wide">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <span class="footer-wordmark">RANGREZ STUDIO</span>
+          <span class="footer-tagline">ROOTED IN CULTURE. MADE FOR NOW.</span>
+          <p class="footer-manifesto">
+            An award-winning contemporary Indian couture atelier celebrating generational handloom weaves, master zardozi embroidery, and architectural silhouettes.
+          </p>
+          <p class="footer-flagships">
+            <strong>FLAGSHIP ATELIERS:</strong><br>
+            Kalka Das Marg, Mehrauli, New Delhi · 110030<br>
+            Ropewalk Lane, Kala Ghoda, Mumbai · 400001
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">SHOP SILHOUETTES</h3>
+          <ul class="footer-links">
+            <li><a href="shop.html" class="footer-link">The Complete Catalogue</a></li>
+            <li><a href="new-arrivals.html" class="footer-link">The New India Edit</a></li>
+            <li><a href="contemporary-ethnic.html" class="footer-link">Contemporary Ethnic</a></li>
+            <li><a href="festive-collection.html" class="footer-link">Festive Stories</a></li>
+            <li><a href="shop.html?category=kurtas" class="footer-link">Designer Kurtas</a></li>
+            <li><a href="shop.html?category=sarees" class="footer-link">Modern Sarees</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">THE ATELIER</h3>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">Our Story &amp; Ethos</a></li>
+            <li><a href="about.html#textile-heritage" class="footer-link">Textile Heritage</a></li>
+            <li><a href="about.html#master-artisans" class="footer-link">Master Artisans</a></li>
+            <li><a href="journal.html" class="footer-link">Style Journal</a></li>
+            <li><a href="about.html#timeline" class="footer-link">Atelier Milestones</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">CLIENT CONCIERGE</h3>
+          <ul class="footer-links">
+            <li><a href="contact.html" class="footer-link">Bespoke Appointments</a></li>
+            <li><a href="contact.html#locations" class="footer-link">Atelier Visits</a></li>
+            <li><a href="cart.html" class="footer-link">Shopping Bag</a></li>
+            <li><a href="contact.html#faq" class="footer-link">Shipping &amp; Alterations</a></li>
+            <li><a href="contact.html#faq" class="footer-link">Care Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">CONNECT</h3>
+          <p style="font-size: 0.85rem; color: rgba(233, 216, 197, 0.7); line-height: 1.5; margin-bottom: 1rem;">
+            Follow our seasonal runway presentations and atelier reels.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://pinterest.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><path d="M8 12c0 2 2 3 2 3s-.3 1.2-.5 2.1c-.2.8-.7 1.9-1.5 2.9"></path></svg>
+            </a>
+          </div>
+          <p style="font-size: 0.75rem; color: var(--color-sand-muted); margin-top: 1.5rem;">
+            Concierge Desk:<br>
+            <span style="color: var(--color-sand);">concierge@rangrezstudio.com</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 RANGREZ STUDIO. All rights reserved. Sample 04 Contemporary Indian Luxury Collection.</span>
+        <div class="footer-legal-links">
+          <a href="contact.html#faq">Terms &amp; Bespoke Ordering</a>
+          <a href="contact.html#faq">Privacy &amp; Data Ethics</a>
+          <a href="contact.html#faq">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Article Reader Script -->
+  <script>
+    const ARTICLES = {
+      1: {
+        title: "The New Language of Indian Fashion",
+        category: "CRITICAL ESSAY · 6 MIN READ",
+        author: "Meera Rangnekar, Creative Director",
+        date: "Spring 2026",
+        img: "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&w=1200&q=85",
+        content: `
+          <p>For more than three decades, the prevailing doctrine of luxury Indian bridal and festive couture was straightforward: more was more. Garments were calibrated by their physical weight in crystals, pearls, and metallic wire. A lehenga that weighed fifteen kilograms was hailed as more luxurious than one weighing five.</p>
+          <blockquote>"True luxury lies not in the exhaustion of the artisan, but in their mastery of proportion and raw material integrity."</blockquote>
+          <p>Today, a quiet revolution is unfolding. A discerning, globally mobile generation of patrons is seeking something entirely different: lightness, kinetic freedom, and textural pedigree. When you wear a handwoven Chanderi silk that takes fourteen days to weave on a pit-loom, you are carrying an invisible weight of cultural history that no amount of machine-pressed diamantes can rival.</p>
+          <p>At Rangrez Studio, we believe our clothes must move with the speed of contemporary life. Whether you are descending an aircraft in London or celebrating at an ancestral haveli in Jaipur, your clothing should feel like an extension of your artistic confidence, never an ornamental cage.</p>
+        `
+      },
+      2: {
+        title: "A Modern Take on Traditional Dressing",
+        category: "STYLE GUIDE · 5 MIN READ",
+        author: "Devraj Sengupta, Atelier Stylist",
+        date: "Early 2026",
+        img: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=1200&q=85",
+        content: `
+          <p>The ceremonial wardrobe of the modern Indian woman has expanded beyond the binary of the traditional saree and the heavy anarkali. Today's celebratory wardrobe is modular, architectural, and delightfully irreverent.</p>
+          <blockquote>"The contemporary co-ord set is not an abandonment of Indian fashion; it is its natural evolutionary leap."</blockquote>
+          <p>Consider the pre-draped dhoti paired with a corseted peplum vest. It honours the ancient drapery of northern and western India while introducing the razor-sharp tailoring of modern suiting. You can walk, dance, and converse without a single fear of untied pleats or trailing hems.</p>
+          <p>Similarly, the brocade trench coat transforms the hallowed Banarasi kadwa weave from a ceremonial heirloom into a globetrotting statement outerwear piece that looks just as commanding over tailored trousers as it does over a silk slip dress.</p>
+        `
+      },
+      3: {
+        title: "Colours That Tell Stories",
+        category: "MATERIAL ARCHIVE · 7 MIN READ",
+        author: "Pooja Varma, Textile Historian",
+        date: "Winter 2026",
+        img: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=1200&q=85",
+        content: `
+          <p>In South Asian aesthetic philosophy, color is never an afterthought. It is <em>Rasa</em> — emotional essence and metaphysical vibration. In the historic dye houses of Rajasthan and Gujarat, the Rangrez was revered as an alchemist who could capture the fire of the sunset in a vat of madder root.</p>
+          <blockquote>"Burnt Terracotta is not merely an earth tone; it is the brick of our stepwells, the clay of our kulhars, and the dust of the twilight sky."</blockquote>
+          <p>When we formulate the Rangrez Studio palette, we avoid synthetic, day-glo neon chemical dyes. Instead, we calibrate tones that resonate with the warm undertones of South Asian skin: burnt terracotta, deep sindoor maroon, golden marigold, and cool forest moss. These colours do not scream for attention; they hold court with calm, grounded authority.</p>
+        `
+      },
+      4: {
+        title: "The Warp and Weft of Chanderi",
+        category: "TEXTILE FIELD NOTES · 8 MIN READ",
+        author: "Atelier Field Notes",
+        date: "Autumn 2025",
+        img: "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=1200&q=85",
+        content: `
+          <p>Walking through the quiet stone alleys of Chanderi in Madhya Pradesh, the acoustic backdrop is dominated by the gentle clatter of wooden shuttles. Here, generations of weavers have perfected a weave so light that Mughal chroniclers described it as 'woven air'.</p>
+          <blockquote>"The translucency of Chanderi comes from using high-twist filament silk in the warp and unbleached cotton in the weft."</blockquote>
+          <p>Every meter requires precision tension control that only human hands can maintain. When we introduce antique gold zari motifs into our Noorani kurtas, each motif is individually tucked by the weaver, ensuring that the reverse side feels like butter against the wearer's skin.</p>
+        `
+      },
+      5: {
+        title: "The Geometry of the Saree Drape",
+        category: "DESIGN THEORY · 5 MIN READ",
+        author: "Meera Rangnekar",
+        date: "Autumn 2025",
+        img: "https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=1200&q=85",
+        content: `
+          <p>The saree is perhaps the world's only unbroken continuous garment surviving from antiquity. It represents an infinite dialogue between the human body and six yards of unstitched silk.</p>
+          <p>When designing our pre-draped collection, our architectural challenge was clear: how to preserve the spontaneous, asymmetrical elegance of the pallu while giving women the peace of mind of a structured evening gown. By anchoring precision folds to an internal silk grosgrain waistband, we unlocked effortless grace for our international patrons.</p>
+        `
+      },
+      6: {
+        title: "Caring for Handloom Silks",
+        category: "ATELIER CARE · 4 MIN READ",
+        author: "Rangrez Conservation Team",
+        date: "Winter 2025",
+        img: "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=1200&q=85",
+        content: `
+          <p>A true Indian heirloom does not expire after one season; it is passed from mother to daughter across generations. To ensure your Rangrez garments retain their lustre for decades, follow our atelier preservation protocol.</p>
+          <p>Never store pure silks in plastic covers, which trap moisture and can degrade natural protein fibres. Always wrap them in unbleached pure cotton or muslin cloth. Refold your zardozi and brocade pieces every six months along different creases to avoid strain on metallic nakshi threads.</p>
+        `
+      }
+    };
+
+    function openArticleReader(id) {
+      const article = ARTICLES[id] || ARTICLES[1];
+      const modal = document.getElementById("article-reader-modal");
+      const content = document.getElementById("article-reader-content");
+
+      content.innerHTML = `
+        <span class="eyebrow">${article.category}</span>
+        <h1 style="font-family: var(--font-serif); font-size: clamp(2rem, 3.5vw, 2.8rem); color: var(--color-brown); line-height: 1.15; margin-bottom: 0.75rem;">
+          ${article.title}
+        </h1>
+        <div style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1.75rem; border-bottom: 1px solid var(--color-border); padding-bottom: 1rem;">
+          By <strong>${article.author}</strong> · Published in ${article.date}
+        </div>
+        <div style="aspect-ratio: 16 / 9; overflow: hidden; border-radius: var(--radius-xs); margin-bottom: 2rem;">
+          <img src="${article.img}" alt="${article.title}" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="article-body-content">
+          ${article.content}
+        </div>
+        <div style="margin-top: 3rem; border-top: 1px solid var(--color-border); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-size: 0.8rem; color: var(--color-text-muted);">Share this essay with discerning friends</span>
+          <button type="button" class="btn btn-sm btn-outline" onclick="closeArticleReader()">CLOSE ESSAY</button>
+        </div>
+      `;
+
+      modal.classList.add("is-open");
+      document.body.classList.add("modal-open");
+    }
+
+    function closeArticleReader() {
+      const modal = document.getElementById("article-reader-modal");
+      if (modal) {
+        modal.classList.remove("is-open");
+        document.body.classList.remove("modal-open");
+      }
+    }
+  </script>
+
+</body>
+</html>

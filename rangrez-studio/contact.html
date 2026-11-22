@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Concierge &amp; Atelier Visits | RANGREZ STUDIO Contemporary Indian Couture</title>
+  <meta name="description" content="Book a private couture appointment or bespoke styling consultation at Rangrez Studio flagship ateliers in New Delhi (Mehrauli) and Mumbai (Kala Ghoda).">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪷</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" role="complementary" aria-label="Announcement">
+    <span>CELEBRATING THE ART OF INDIAN DRESSING.</span>
+  </aside>
+
+  <!-- Sticky Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      
+      <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open mobile navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav class="header-nav-left" aria-label="Primary Navigation">
+        <a href="shop.html" class="nav-link">Discover</a>
+        <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+        <a href="contemporary-ethnic.html" class="nav-link">Clothing</a>
+        <a href="festive-collection.html" class="nav-link">Collections</a>
+      </nav>
+
+      <div class="header-brand-center">
+        <a href="index.html" class="brand-link" aria-label="Rangrez Studio Home">
+          <span class="brand-wordmark">RANGREZ STUDIO</span>
+          <span class="brand-wordmark-sub">COUTURE · ATELIER</span>
+        </a>
+      </div>
+
+      <div class="header-nav-right">
+        <button type="button" class="header-action-btn open-search-trigger" aria-label="Search silhouettes">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span class="header-action-label">Search</span>
+        </button>
+
+        <button type="button" class="header-action-btn open-wishlist-trigger" aria-label="View Saved Wishlist">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span class="header-action-label">Wishlist</span>
+          <span class="badge-count wishlist-count-badge" style="display: none;">0</span>
+        </button>
+
+        <button type="button" class="header-action-btn open-cart-trigger" aria-label="Shopping Bag">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="header-action-label">Bag</span>
+          <span class="badge-count cart-count-badge" style="display: none;">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <span class="brand-wordmark" style="font-size: 1.15rem;">RANGREZ STUDIO</span>
+      <button type="button" class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="shop.html" class="mobile-nav-link">Shop All</a></li>
+      <li><a href="new-arrivals.html" class="mobile-nav-link">The New India Edit</a></li>
+      <li><a href="contemporary-ethnic.html" class="mobile-nav-link">Contemporary Ethnic</a></li>
+      <li><a href="festive-collection.html" class="mobile-nav-link">Festive Stories</a></li>
+      <li><a href="about.html" class="mobile-nav-link">Our Story &amp; Atelier</a></li>
+      <li><a href="journal.html" class="mobile-nav-link">Style Journal</a></li>
+      <li><a href="contact.html" class="mobile-nav-link is-active">Concierge &amp; Appointments</a></li>
+      <li><a href="cart.html" class="mobile-nav-link">Shopping Bag (<span class="cart-count-badge">0</span>)</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <span class="mobile-concierge-phone">BESPOKE CONCIERGE: +91 11 4982 7100</span>
+      <p class="mobile-atelier-loc">Ateliers in Mehrauli, New Delhi &amp; Kala Ghoda, Mumbai.</p>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">PERSONALIZED ATTENTION</span>
+        <h1 class="page-hero-title">Client Concierge</h1>
+        <p class="page-hero-desc">
+          Schedule an intimate styling consultation at our flagship ateliers in New Delhi or Mumbai, or connect with our international digital concierge.
+        </p>
+
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <ul class="breadcrumb-list" style="justify-content: center;">
+            <li><a href="index.html">Home</a></li>
+            <li class="breadcrumb-sep">/</li>
+            <li class="breadcrumb-current">Contact &amp; Concierge</li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Main Contact & Booking Form Grid -->
+    <section class="container-wide">
+      <div class="contact-grid">
+        
+        <!-- Left Column: Flagship Addresses & Direct Contacts -->
+        <div class="contact-info-col" id="locations">
+          <span class="eyebrow">PHYSICAL SALONS</span>
+          <h2 style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--color-brown); margin-bottom: 1rem;">Flagship Ateliers</h2>
+          <p style="font-size: 0.95rem; color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 2rem;">
+            Experience the tactile richness of our handwoven textiles in tranquil spaces designed in dialogue with Indian architectural minimalism.
+          </p>
+
+          <div class="flagship-cards-list">
+            <!-- New Delhi -->
+            <div class="flagship-card">
+              <span class="eyebrow">NEW DELHI FLAGSHIP</span>
+              <h3 class="flagship-city">Mehrauli Heritage Quarter</h3>
+              <p class="flagship-address">
+                Kalka Das Marg, Opp. Qutub Minar Complex<br>
+                Mehrauli, New Delhi · 110030
+              </p>
+              <p style="font-size: 0.85rem; color: var(--color-brown); margin-bottom: 0.5rem;">
+                <strong>Direct Desk:</strong> +91 11 4982 7100<br>
+                <strong>WhatsApp Concierge:</strong> +91 98110 44220
+              </p>
+              <p class="flagship-hours">Monday to Saturday: 11:00 AM – 7:30 PM (By Appointment &amp; Walk-in)</p>
+            </div>
+
+            <!-- Mumbai -->
+            <div class="flagship-card">
+              <span class="eyebrow">MUMBAI FLAGSHIP</span>
+              <h3 class="flagship-city">Kala Ghoda Arts District</h3>
+              <p class="flagship-address">
+                Ropewalk Lane, Above Art Entrance Gallery<br>
+                Fort, Mumbai · 400001
+              </p>
+              <p style="font-size: 0.85rem; color: var(--color-brown); margin-bottom: 0.5rem;">
+                <strong>Direct Desk:</strong> +91 22 2284 3900<br>
+                <strong>WhatsApp Concierge:</strong> +91 98200 77110
+              </p>
+              <p class="flagship-hours">Tuesday to Sunday: 11:00 AM – 8:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Appointment Booking Form -->
+        <div class="concierge-form-col">
+          <div class="concierge-form-card">
+            <span class="eyebrow">APPOINTMENT REQUEST</span>
+            <h2 style="font-family: var(--font-serif); font-size: 2rem; color: var(--color-brown); margin-bottom: 0.5rem;">Book a Consultation</h2>
+            <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 2rem;">
+              Please share your preferred date and celebration details. Our head stylist will confirm your appointment within 24 hours.
+            </p>
+
+            <form id="concierge-booking-form" novalidate>
+              <div class="checkout-form-grid">
+                
+                <div class="form-group">
+                  <label for="c-name">Full Name *</label>
+                  <input type="text" id="c-name" class="form-control" placeholder="e.g. Rohini Sen" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="c-email">Email Address *</label>
+                  <input type="email" id="c-email" class="form-control" placeholder="e.g. rohini@example.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="c-phone">Phone Number *</label>
+                  <input type="tel" id="c-phone" class="form-control" placeholder="e.g. +91 98765 43210" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="c-type">Consultation Type</label>
+                  <select id="c-type" class="form-control">
+                    <option value="festive">Festive Wardrobe Curation</option>
+                    <option value="bridal">Bespoke Bridal Couture</option>
+                    <option value="sizing">At-Home Sizing &amp; Fitting</option>
+                    <option value="virtual">Virtual Video Consultation</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="c-salon">Preferred Atelier</label>
+                  <select id="c-salon" class="form-control">
+                    <option value="delhi">Mehrauli Flagship (New Delhi)</option>
+                    <option value="mumbai">Kala Ghoda Flagship (Mumbai)</option>
+                    <option value="virtual">Virtual (Zoom / FaceTime)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="c-date">Preferred Date</label>
+                  <input type="date" id="c-date" class="form-control">
+                </div>
+
+                <div class="form-group form-full">
+                  <label for="c-notes">Occasion &amp; Styling Preferences</label>
+                  <textarea id="c-notes" class="form-control" rows="3" placeholder="Tell us about the upcoming occasion, preferred colours (terracotta, maroon, marigold), or silhouettes you wish to examine..."></textarea>
+                </div>
+
+              </div>
+
+              <button type="submit" class="btn btn-terracotta btn-full" style="height: 50px;">CONFIRM CONSULTATION REQUEST</button>
+            </form>
+
+            <div id="booking-success-message" style="display: none; margin-top: 1.5rem; padding: 1.5rem; background-color: var(--color-sand-light); border: 1px solid var(--color-terracotta); border-radius: var(--radius-xs); text-align: center;">
+              <h4 style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--color-brown); margin-bottom: 0.35rem;">Consultation Requested</h4>
+              <p style="font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.6;">
+                Thank you for reaching out to the Rangrez Concierge. Our senior draper will connect with you via email and WhatsApp to confirm your preferred salon appointment.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header-editorial" style="justify-content: center; text-align: center;">
+          <div>
+            <span class="eyebrow">CLIENT ASSISTANCE</span>
+            <h2 class="section-title">Frequently Answered Queries</h2>
+            <p class="section-subtitle" style="margin: 0 auto;">Everything you need to know about our handloom heritage, bespoke fits, and international delivery.</p>
+          </div>
+        </div>
+
+        <div class="faq-accordion-wrap">
+          
+          <!-- FAQ 1 -->
+          <div class="accordion-tab is-open">
+            <button type="button" class="accordion-trigger">
+              <span>DO YOU SHIP INTERNATIONALLY?</span>
+              <span class="accordion-icon">&plus;</span>
+            </button>
+            <div class="accordion-content">
+              Yes, Rangrez Studio ships across North America, the United Kingdom, Europe, the Middle East, Southeast Asia, and Australasia via DHL Express and FedEx Insured Courier. International delivery typically arrives within 5 to 7 business days. All duties and customs are prepaid where indicated.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-tab">
+            <button type="button" class="accordion-trigger">
+              <span>HOW DO COMPLIMENTARY IN-ATELIER ALTERATIONS WORK?</span>
+              <span class="accordion-icon">&plus;</span>
+            </button>
+            <div class="accordion-content">
+              Every garment crafted by Rangrez Studio features generous 2-inch concealed seam margins. If you require minor bodice tapering, sleeve adjustments, or length hem alterations, bring your piece to our Mehrauli or Kala Ghoda flagship salons for complimentary tailoring within 60 days of purchase.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-tab">
+            <button type="button" class="accordion-trigger">
+              <span>CAN I CUSTOMIZE COLOURWAYS OR EMBROIDERY DENSITY?</span>
+              <span class="accordion-icon">&plus;</span>
+            </button>
+            <div class="accordion-content">
+              For our festive and bridal couture edits (such as the Sultana Lehenga or Zafira Velvet Cape), we offer custom dye-lot formulations from our mineral earth archive and bespoke neckline variations. Please book an atelier consultation to discuss custom commissions with our design directors.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-tab">
+            <button type="button" class="accordion-trigger">
+              <span>WHAT IS YOUR RETURN AND EXCHANGE PROTOCOL?</span>
+              <span class="accordion-icon">&plus;</span>
+            </button>
+            <div class="accordion-content">
+              We offer seamless size exchanges within 14 days of delivery for all standard catalogue orders in original, unworn condition with atelier tags intact. Custom-tailored and bespoke monogrammed silhouettes are handcrafted to order and are considered final sales.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container-wide">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <span class="footer-wordmark">RANGREZ STUDIO</span>
+          <span class="footer-tagline">ROOTED IN CULTURE. MADE FOR NOW.</span>
+          <p class="footer-manifesto">
+            An award-winning contemporary Indian couture atelier celebrating generational handloom weaves, master zardozi embroidery, and architectural silhouettes.
+          </p>
+          <p class="footer-flagships">
+            <strong>FLAGSHIP ATELIERS:</strong><br>
+            Kalka Das Marg, Mehrauli, New Delhi · 110030<br>
+            Ropewalk Lane, Kala Ghoda, Mumbai · 400001
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">SHOP SILHOUETTES</h3>
+          <ul class="footer-links">
+            <li><a href="shop.html" class="footer-link">The Complete Catalogue</a></li>
+            <li><a href="new-arrivals.html" class="footer-link">The New India Edit</a></li>
+            <li><a href="contemporary-ethnic.html" class="footer-link">Contemporary Ethnic</a></li>
+            <li><a href="festive-collection.html" class="footer-link">Festive Stories</a></li>
+            <li><a href="shop.html?category=kurtas" class="footer-link">Designer Kurtas</a></li>
+            <li><a href="shop.html?category=sarees" class="footer-link">Modern Sarees</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">THE ATELIER</h3>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">Our Story &amp; Ethos</a></li>
+            <li><a href="about.html#textile-heritage" class="footer-link">Textile Heritage</a></li>
+            <li><a href="about.html#master-artisans" class="footer-link">Master Artisans</a></li>
+            <li><a href="journal.html" class="footer-link">Style Journal</a></li>
+            <li><a href="about.html#timeline" class="footer-link">Atelier Milestones</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">CLIENT CONCIERGE</h3>
+          <ul class="footer-links">
+            <li><a href="contact.html" class="footer-link">Bespoke Appointments</a></li>
+            <li><a href="contact.html#locations" class="footer-link">Atelier Visits</a></li>
+            <li><a href="cart.html" class="footer-link">Shopping Bag</a></li>
+            <li><a href="contact.html#faq" class="footer-link">Shipping &amp; Alterations</a></li>
+            <li><a href="contact.html#faq" class="footer-link">Care Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">CONNECT</h3>
+          <p style="font-size: 0.85rem; color: rgba(233, 216, 197, 0.7); line-height: 1.5; margin-bottom: 1rem;">
+            Follow our seasonal runway presentations and atelier reels.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://pinterest.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><path d="M8 12c0 2 2 3 2 3s-.3 1.2-.5 2.1c-.2.8-.7 1.9-1.5 2.9"></path></svg>
+            </a>
+          </div>
+          <p style="font-size: 0.75rem; color: var(--color-sand-muted); margin-top: 1.5rem;">
+            Concierge Desk:<br>
+            <span style="color: var(--color-sand);">concierge@rangrezstudio.com</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 RANGREZ STUDIO. All rights reserved. Sample 04 Contemporary Indian Luxury Collection.</span>
+        <div class="footer-legal-links">
+          <a href="contact.html#faq">Terms &amp; Bespoke Ordering</a>
+          <a href="contact.html#faq">Privacy &amp; Data Ethics</a>
+          <a href="contact.html#faq">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Contact Form & FAQ Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // FAQ Accordion
+      document.querySelectorAll(".faq-section .accordion-trigger").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const tab = btn.closest(".accordion-tab");
+          tab.classList.toggle("is-open");
+        });
+      });
+
+      // Form validation & submission
+      const form = document.getElementById("concierge-booking-form");
+      const successMsg = document.getElementById("booking-success-message");
+
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const name = document.getElementById("c-name").value.trim();
+          const email = document.getElementById("c-email").value.trim();
+          const phone = document.getElementById("c-phone").value.trim();
+
+          if (!name || !email || !phone) {
+            if (window.rangrezCart) window.rangrezCart.showToast("Please provide your name, email, and telephone.", "info");
+            return;
+          }
+
+          form.style.display = "none";
+          successMsg.style.display = "block";
+          if (window.rangrezCart) window.rangrezCart.showToast("Appointment consultation request dispatched.", "info");
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

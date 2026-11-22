@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop All Silhouettes | RANGREZ STUDIO Contemporary Indian Couture</title>
+  <meta name="description" content="Explore the full collection of contemporary Indian designer kurtas, modern sarees, co-ord sets, and festive ensembles at Rangrez Studio.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪷</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" role="complementary" aria-label="Announcement">
+    <span>CELEBRATING THE ART OF INDIAN DRESSING.</span>
+  </aside>
+
+  <!-- Sticky Desktop & Mobile Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open mobile navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <!-- Desktop Left Navigation -->
+      <nav class="header-nav-left" aria-label="Primary Navigation">
+        <a href="shop.html" class="nav-link is-active">Discover</a>
+        <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+        <a href="contemporary-ethnic.html" class="nav-link">Clothing</a>
+        <a href="festive-collection.html" class="nav-link">Collections</a>
+      </nav>
+
+      <!-- Center Wordmark -->
+      <div class="header-brand-center">
+        <a href="index.html" class="brand-link" aria-label="Rangrez Studio Home">
+          <span class="brand-wordmark">RANGREZ STUDIO</span>
+          <span class="brand-wordmark-sub">COUTURE · ATELIER</span>
+        </a>
+      </div>
+
+      <!-- Right Navigation Actions -->
+      <div class="header-nav-right">
+        <!-- Search Trigger -->
+        <button type="button" class="header-action-btn open-search-trigger" aria-label="Search silhouettes">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span class="header-action-label">Search</span>
+        </button>
+
+        <!-- Wishlist Trigger -->
+        <button type="button" class="header-action-btn open-wishlist-trigger" aria-label="View Saved Wishlist">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="header-action-label">Wishlist</span>
+          <span class="badge-count wishlist-count-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Shopping Bag Trigger -->
+        <button type="button" class="header-action-btn open-cart-trigger" aria-label="Shopping Bag">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="header-action-label">Bag</span>
+          <span class="badge-count cart-count-badge" style="display: none;">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <span class="brand-wordmark" style="font-size: 1.15rem;">RANGREZ STUDIO</span>
+      <button type="button" class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="shop.html" class="mobile-nav-link is-active">Shop All</a></li>
+      <li><a href="new-arrivals.html" class="mobile-nav-link">The New India Edit</a></li>
+      <li><a href="contemporary-ethnic.html" class="mobile-nav-link">Contemporary Ethnic</a></li>
+      <li><a href="festive-collection.html" class="mobile-nav-link">Festive Stories</a></li>
+      <li><a href="about.html" class="mobile-nav-link">Our Story &amp; Atelier</a></li>
+      <li><a href="journal.html" class="mobile-nav-link">Style Journal</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Concierge &amp; Appointments</a></li>
+      <li><a href="cart.html" class="mobile-nav-link">Shopping Bag (<span class="cart-count-badge">0</span>)</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <span class="mobile-concierge-phone">BESPOKE CONCIERGE: +91 11 4982 7100</span>
+      <p class="mobile-atelier-loc">Ateliers in Mehrauli, New Delhi &amp; Kala Ghoda, Mumbai.</p>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">THE ARCHIVAL CATALOGUE</span>
+        <h1 class="page-hero-title">All Silhouettes</h1>
+        <p class="page-hero-desc">
+          An ongoing dialogue between generational Indian textile heritage and sculptural modern lines. Explore handcrafted kurtas, tailored co-ord sets, and modern pre-draped sarees.
+        </p>
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <ul class="breadcrumb-list" style="justify-content: center;">
+            <li><a href="index.html">Home</a></li>
+            <li class="breadcrumb-sep">/</li>
+            <li class="breadcrumb-current">Shop All</li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Catalogue Controls & Filter Bar -->
+    <section class="catalogue-controls-bar">
+      <div class="container-wide">
+        <div class="catalogue-filters-wrap">
+          
+          <!-- Category Pills -->
+          <div class="filter-categories-pills" role="tablist" aria-label="Filter by category">
+            <button type="button" class="filter-pill is-active" data-filter-category="all">All Silhouettes</button>
+            <button type="button" class="filter-pill" data-filter-category="kurtas">Designer Kurtas</button>
+            <button type="button" class="filter-pill" data-filter-category="coords">Contemporary Co-ords</button>
+            <button type="button" class="filter-pill" data-filter-category="sarees">Modern Sarees</button>
+            <button type="button" class="filter-pill" data-filter-category="festive">Festive Ensembles</button>
+            <button type="button" class="filter-pill" data-filter-category="dresses">Elegant Dresses</button>
+          </div>
+
+          <!-- Subfilters Row -->
+          <div class="catalogue-subfilters-row">
+            
+            <div class="subfilters-left">
+              <!-- Color Filter Swatches -->
+              <div class="subfilter-group">
+                <span class="subfilter-label">COLOUR:</span>
+                <div class="subfilter-swatches">
+                  <button type="button" class="subfilter-swatch" data-filter-color="Terracotta" style="background-color: #A34F37;" title="Burnt Terracotta"></button>
+                  <button type="button" class="subfilter-swatch" data-filter-color="Maroon" style="background-color: #572B37;" title="Deep Maroon"></button>
+                  <button type="button" class="subfilter-swatch" data-filter-color="Sand" style="background-color: #E9D8C5;" title="Warm Sand"></button>
+                  <button type="button" class="subfilter-swatch" data-filter-color="Marigold" style="background-color: #D99B35;" title="Marigold"></button>
+                  <button type="button" class="subfilter-swatch" data-filter-color="Forest" style="background-color: #354C3D;" title="Forest Green"></button>
+                  <button type="button" class="subfilter-swatch" data-filter-color="Brown" style="background-color: #382D28;" title="Deep Brown"></button>
+                </div>
+              </div>
+
+              <!-- Size Filter -->
+              <div class="subfilter-group">
+                <span class="subfilter-label">SIZE:</span>
+                <div class="subfilter-sizes">
+                  <button type="button" class="subfilter-size-btn" data-filter-size="XS">XS</button>
+                  <button type="button" class="subfilter-size-btn" data-filter-size="S">S</button>
+                  <button type="button" class="subfilter-size-btn" data-filter-size="M">M</button>
+                  <button type="button" class="subfilter-size-btn" data-filter-size="L">L</button>
+                  <button type="button" class="subfilter-size-btn" data-filter-size="XL">XL</button>
+                </div>
+              </div>
+
+              <!-- Price Slider -->
+              <div class="subfilter-group">
+                <span class="subfilter-label">MAX PRICE:</span>
+                <div class="price-slider-wrap">
+                  <input type="range" id="price-range-slider" min="15000" max="60000" step="2000" value="60000">
+                  <span class="price-val" id="price-range-display">₹60,000</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="subfilters-right">
+              <!-- Search In Shop -->
+              <div class="search-input-wrap" style="position: relative;">
+                <input type="text" id="catalogue-search-input" placeholder="Search silhouettes..." style="padding: 0.5rem 0.85rem; border: 1px solid var(--color-border); border-radius: var(--radius-xs); font-size: 0.8rem; background: var(--color-white); width: 170px;">
+              </div>
+
+              <!-- Sort Select -->
+              <div class="sort-select-wrap">
+                <select id="catalogue-sort-select" aria-label="Sort silhouettes">
+                  <option value="featured">Sort: Featured</option>
+                  <option value="newest">Sort: Newest</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="rating">Top Rated</option>
+                </select>
+              </div>
+
+              <button type="button" id="catalogue-reset-btn" class="reset-filter-btn">Reset All</button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalogue Grid Section -->
+    <section class="catalogue-grid-section" style="padding: 1rem 0 6rem;">
+      <div class="container-wide">
+        
+        <div class="catalogue-status-bar">
+          <span id="catalogue-count">Showing 12 Silhouettes</span>
+          <span style="font-size: 0.78rem; color: var(--color-text-muted);">Complimentary Express Shipping on all atelier orders.</span>
+        </div>
+
+        <!-- Dynamic Product Cards Grid -->
+        <div class="products-grid" id="catalogue-products-grid">
+          <!-- Rendered dynamically by CatalogueController -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="catalogue-empty" id="catalogue-empty-state">
+          <h3 style="font-family: var(--font-serif); font-size: 1.8rem; color: var(--color-brown); margin-bottom: 0.5rem;">No silhouettes match your current criteria</h3>
+          <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem;">Try adjusting your price ceiling, clearing colour swatches, or search for broader textile terms.</p>
+          <button type="button" class="btn btn-primary" onclick="window.catalogueCtrl.resetAllFilters()">RESET ALL FILTERS</button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container-wide">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <span class="footer-wordmark">RANGREZ STUDIO</span>
+          <span class="footer-tagline">ROOTED IN CULTURE. MADE FOR NOW.</span>
+          <p class="footer-manifesto">
+            An award-winning contemporary Indian couture atelier celebrating generational handloom weaves, master zardozi embroidery, and architectural silhouettes.
+          </p>
+          <p class="footer-flagships">
+            <strong>FLAGSHIP ATELIERS:</strong><br>
+            Kalka Das Marg, Mehrauli, New Delhi · 110030<br>
+            Ropewalk Lane, Kala Ghoda, Mumbai · 400001
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">SHOP SILHOUETTES</h3>
+          <ul class="footer-links">
+            <li><a href="shop.html" class="footer-link">The Complete Catalogue</a></li>
+            <li><a href="new-arrivals.html" class="footer-link">The New India Edit</a></li>
+            <li><a href="contemporary-ethnic.html" class="footer-link">Contemporary Ethnic</a></li>
+            <li><a href="festive-collection.html" class="footer-link">Festive Stories</a></li>
+            <li><a href="shop.html?category=kurtas" class="footer-link">Designer Kurtas</a></li>
+            <li><a href="shop.html?category=sarees" class="footer-link">Modern Sarees</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">THE ATELIER</h3>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">Our Story &amp; Ethos</a></li>
+            <li><a href="about.html#textile-heritage" class="footer-link">Textile Heritage</a></li>
+            <li><a href="about.html#master-artisans" class="footer-link">Master Artisans</a></li>
+            <li><a href="journal.html" class="footer-link">Style Journal</a></li>
+            <li><a href="about.html#timeline" class="footer-link">Atelier Milestones</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">CLIENT CONCIERGE</h3>
+          <ul class="footer-links">
+            <li><a href="contact.html" class="footer-link">Bespoke Appointments</a></li>
+            <li><a href="contact.html#locations" class="footer-link">Atelier Visits</a></li>
+            <li><a href="cart.html" class="footer-link">Shopping Bag</a></li>
+            <li><a href="contact.html#faq" class="footer-link">Shipping &amp; Alterations</a></li>
+            <li><a href="contact.html#faq" class="footer-link">Care Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">CONNECT</h3>
+          <p style="font-size: 0.85rem; color: rgba(233, 216, 197, 0.7); line-height: 1.5; margin-bottom: 1rem;">
+            Follow our seasonal runway presentations and atelier reels.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://pinterest.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><path d="M8 12c0 2 2 3 2 3s-.3 1.2-.5 2.1c-.2.8-.7 1.9-1.5 2.9"></path></svg>
+            </a>
+          </div>
+          <p style="font-size: 0.75rem; color: var(--color-sand-muted); margin-top: 1.5rem;">
+            Concierge Desk:<br>
+            <span style="color: var(--color-sand);">concierge@rangrezstudio.com</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 RANGREZ STUDIO. All rights reserved. Sample 04 Contemporary Indian Luxury Collection.</span>
+        <div class="footer-legal-links">
+          <a href="contact.html#faq">Terms &amp; Bespoke Ordering</a>
+          <a href="contact.html#faq">Privacy &amp; Data Ethics</a>
+          <a href="contact.html#faq">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      window.catalogueCtrl = new CatalogueController({
+        containerId: "catalogue-products-grid",
+        counterId: "catalogue-count",
+        emptyStateId: "catalogue-empty-state"
+      });
+    });
+  </script>
+
+</body>
+</html>

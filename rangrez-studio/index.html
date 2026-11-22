@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RANGREZ STUDIO | Contemporary Indian Fashion & Luxury Ethnic Boutique</title>
+  <meta name="description" content="Rooted in culture. Made for now. Discover contemporary Indian couture, artistic textiles, and modern ethnic silhouettes at Rangrez Studio.">
+  <meta name="keywords" content="Indian couture, contemporary ethnic wear, designer kurtas, modern sarees, festive ensembles, Banarasi brocade, Chanderi silk, Rangrez Studio">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="RANGREZ STUDIO | Contemporary Indian Luxury Fashion">
+  <meta property="og:description" content="Rooted in culture. Made for now. Contemporary Indian couture and rich textile artistry.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪷</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" role="complementary" aria-label="Announcement">
+    <span>CELEBRATING THE ART OF INDIAN DRESSING.</span>
+  </aside>
+
+  <!-- Sticky Desktop & Mobile Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open mobile navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <!-- Desktop Left Navigation -->
+      <nav class="header-nav-left" aria-label="Primary Navigation">
+        <a href="shop.html" class="nav-link">Discover</a>
+        <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+        <a href="contemporary-ethnic.html" class="nav-link">Clothing</a>
+        <a href="festive-collection.html" class="nav-link">Collections</a>
+      </nav>
+
+      <!-- Center Wordmark (Mathematically Centered in 1fr auto 1fr Grid) -->
+      <div class="header-brand-center">
+        <a href="index.html" class="brand-link" aria-label="Rangrez Studio Home">
+          <span class="brand-wordmark">RANGREZ STUDIO</span>
+          <span class="brand-wordmark-sub">COUTURE · ATELIER</span>
+        </a>
+      </div>
+
+      <!-- Right Navigation Actions -->
+      <div class="header-nav-right">
+        <!-- Search Trigger -->
+        <button type="button" class="header-action-btn open-search-trigger" aria-label="Search silhouettes">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span class="header-action-label">Search</span>
+        </button>
+
+        <!-- Wishlist Trigger -->
+        <button type="button" class="header-action-btn open-wishlist-trigger" aria-label="View Saved Wishlist">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="header-action-label">Wishlist</span>
+          <span class="badge-count wishlist-count-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Shopping Bag Trigger -->
+        <button type="button" class="header-action-btn open-cart-trigger" aria-label="Shopping Bag">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="header-action-label">Bag</span>
+          <span class="badge-count cart-count-badge" style="display: none;">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <span class="brand-wordmark" style="font-size: 1.15rem;">RANGREZ STUDIO</span>
+      <button type="button" class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link is-active">Home</a></li>
+      <li><a href="shop.html" class="mobile-nav-link">Shop All</a></li>
+      <li><a href="new-arrivals.html" class="mobile-nav-link">The New India Edit</a></li>
+      <li><a href="contemporary-ethnic.html" class="mobile-nav-link">Contemporary Ethnic</a></li>
+      <li><a href="festive-collection.html" class="mobile-nav-link">Festive Stories</a></li>
+      <li><a href="about.html" class="mobile-nav-link">Our Story & Atelier</a></li>
+      <li><a href="journal.html" class="mobile-nav-link">Style Journal</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Concierge & Appointments</a></li>
+      <li><a href="cart.html" class="mobile-nav-link">Shopping Bag (<span class="cart-count-badge">0</span>)</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <span class="mobile-concierge-phone">BESPOKE CONCIERGE: +91 11 4982 7100</span>
+      <p class="mobile-atelier-loc">Ateliers in Mehrauli, New Delhi &amp; Kala Ghoda, Mumbai.</p>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- ==========================================================================
+         SECTION A: HERO CAMPAIGN
+         ========================================================================== -->
+    <section class="hero-campaign" aria-labelledby="hero-heading">
+      <div class="container-wide">
+        <div class="hero-grid">
+          
+          <!-- Editorial Text & Manifesto -->
+          <div class="hero-content">
+            <span class="campaign-tag">THE NEW INDIA EDIT / 2026</span>
+            <h1 id="hero-heading" class="hero-headline">
+              COLOUR HAS A <em>CULTURE.</em>
+            </h1>
+            <p class="hero-supporting">
+              An expression of Indian artistry, reimagined for the modern wardrobe. Sculpted raw silks, gossamer Chanderi weaves, and architectural tailoring rooted in heritage.
+            </p>
+            <div class="hero-actions">
+              <a href="shop.html" class="btn btn-terracotta">EXPLORE THE COLLECTION</a>
+              <a href="contemporary-ethnic.html" class="btn btn-outline">VIEW RUNWAY EDIT</a>
+            </div>
+          </div>
+
+          <!-- Editorial Campaign Photography & Floating Accent -->
+          <div class="hero-visual">
+            <div class="hero-image-frame">
+              <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=85" alt="Model in contemporary Indian couture ensemble" width="1200" height="1500" fetchpriority="high">
+            </div>
+            <div class="hero-floating-badge">
+              <p class="badge-quote">"Where generational textile heritage meets international architectural drape."</p>
+              <span class="badge-author">RANGREZ ATELIER MANIFESTO</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION B: EXPLORE THE WORLD OF RANGREZ (CATEGORY DISCOVERY)
+         ========================================================================== -->
+    <section class="categories-section" aria-labelledby="categories-heading">
+      <div class="container-wide">
+        <div class="section-header-editorial">
+          <div>
+            <span class="eyebrow">CURATED SILHOUETTES</span>
+            <h2 id="categories-heading" class="section-title">Explore the World of Rangrez</h2>
+          </div>
+          <a href="shop.html" class="editorial-link">
+            DISCOVER ALL SILHOUETTES
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="categories-editorial-grid">
+          
+          <!-- Category 1 -->
+          <article class="category-card">
+            <a href="contemporary-ethnic.html" class="category-card-link">
+              <div class="category-card-visual">
+                <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=85" alt="Contemporary Ethnic silhouettes" loading="lazy">
+                <div class="category-overlay">
+                  <span class="category-tag">CATEGORY 01</span>
+                  <h3 class="category-title">Contemporary Ethnic</h3>
+                  <span class="category-action">EXPLORE SEPARATES &rarr;</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- Category 2 -->
+          <article class="category-card">
+            <a href="festive-collection.html" class="category-card-link">
+              <div class="category-card-visual">
+                <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=85" alt="Festive Stories collection" loading="lazy">
+                <div class="category-overlay">
+                  <span class="category-tag">CATEGORY 02</span>
+                  <h3 class="category-title">Festive Stories</h3>
+                  <span class="category-action">DISCOVER OCCASIONS &rarr;</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- Category 3 -->
+          <article class="category-card">
+            <a href="shop.html?category=kurtas" class="category-card-link">
+              <div class="category-card-visual">
+                <img src="https://images.unsplash.com/photo-1614786269829-d24616faf56d?auto=format&fit=crop&w=800&q=85" alt="Everyday Tradition kurtas" loading="lazy">
+                <div class="category-overlay">
+                  <span class="category-tag">CATEGORY 03</span>
+                  <h3 class="category-title">Everyday Tradition</h3>
+                  <span class="category-action">SHOP HANDLOOM &rarr;</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- Category 4 -->
+          <article class="category-card">
+            <a href="shop.html?category=sarees" class="category-card-link">
+              <div class="category-card-visual">
+                <img src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=800&q=85" alt="Occasion Wear & modern sarees" loading="lazy">
+                <div class="category-overlay">
+                  <span class="category-tag">CATEGORY 04</span>
+                  <h3 class="category-title">Occasion Wear</h3>
+                  <span class="category-action">VIEW RED CARPET &rarr;</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION C: THE NEW COLLECTION (FEATURED PRODUCTS)
+         ========================================================================== -->
+    <section class="collection-section" aria-labelledby="new-collection-heading">
+      <div class="container-wide">
+        <div class="section-header-editorial">
+          <div>
+            <span class="eyebrow">THE 2026 DEBUT</span>
+            <h2 id="new-collection-heading" class="section-title">The New Collection</h2>
+            <p class="section-subtitle">Exemplary craftsmanship rendered in burnt terracotta, deep maroon, and luminous golden zari.</p>
+          </div>
+          <a href="new-arrivals.html" class="editorial-link">
+            VIEW ALL NEW SILHOUETTES
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <!-- Rendered Dynamically from products.js or static fallback -->
+        <div class="products-grid" id="homepage-featured-grid">
+          <!-- Will be rendered via JS on load for dynamic cart/wishlist sync -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION D: TEXTILE STORIES (CRAFT STORYTELLING)
+         ========================================================================== -->
+    <section class="textile-stories-section" id="textile-stories" aria-labelledby="textile-heading">
+      <div class="container-wide">
+        <div class="textile-split-layout">
+          
+          <div class="textile-narrative">
+            <span class="eyebrow">HERITAGE OF WEAVING</span>
+            <h2 id="textile-heading" class="narrative-headline">EVERY THREAD TELLS A STORY.</h2>
+            <p class="narrative-lead">
+              Indian textile artistry is not simply fabric; it is an oral history spoken in warp, weft, and natural mineral dyes.
+            </p>
+            <p class="narrative-body">
+              At Rangrez Studio, our design ethos begins at the wooden pit looms of Maheshwar and the master zardozi frames of Shahpur Jat. We examine the subtle tactility of hand-spun tussar silk, the crystalline gossamer of Chanderi, and the geometric precision of kadwa Banarasi brocades. By preserving these time-honoured techniques in clean, asymmetric modern cuts, we create garments that transcend ephemeral fashion cycles.
+            </p>
+
+            <div class="craft-highlights">
+              <div class="craft-item">
+                <span class="craft-item-num">14</span>
+                <span class="craft-item-label">Days to handweave each Chanderi panel</span>
+              </div>
+              <div class="craft-item">
+                <span class="craft-item-num">120+</span>
+                <span class="craft-item-label">Hours of intricate bullion zardozi needlework</span>
+              </div>
+            </div>
+
+            <a href="about.html" class="btn btn-outline">READ OUR ATELIER ESSAY</a>
+            <small class="disclaimer-note">*Presented as fictional brand storytelling celebrating Indian textile craft.</small>
+          </div>
+
+          <!-- Mosaic of Fabric Close-ups -->
+          <div class="textile-mosaic">
+            <div class="mosaic-cell">
+              <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=85" alt="Handloom weaving loom" loading="lazy">
+              <span class="mosaic-caption">01. Handloom Shuttle Weave</span>
+            </div>
+            <div class="mosaic-cell">
+              <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=800&q=85" alt="Textured raw silk fabric" loading="lazy">
+              <span class="mosaic-caption">02. Slub Tussar Texture</span>
+            </div>
+            <div class="mosaic-cell">
+              <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=85" alt="Botanical mineral dyes" loading="lazy">
+              <span class="mosaic-caption">03. Madder & Marigold Dyes</span>
+            </div>
+            <div class="mosaic-cell">
+              <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=800&q=85" alt="Zari embroidery and embellishment" loading="lazy">
+              <span class="mosaic-caption">04. Antique Gold Bullion Work</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION E: THE FESTIVE EDIT
+         ========================================================================== -->
+    <section class="festive-edit-section" aria-labelledby="festive-heading">
+      <div class="container-wide">
+        <div class="festive-grid">
+          
+          <div class="festive-image-stack">
+            <div class="festive-main-image">
+              <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=85" alt="Grand festive couture lehenga" loading="lazy">
+            </div>
+            <div class="festive-accent-card">
+              <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=600&q=85" alt="Embroidered trench styling" loading="lazy">
+            </div>
+          </div>
+
+          <div class="festive-content">
+            <span class="eyebrow eyebrow-light">CELEBRATORY COUTURE</span>
+            <h2 id="festive-heading" class="festive-headline">
+              MAKE EVERY OCCASION <em>YOUR OWN.</em>
+            </h2>
+            <p class="festive-copy">
+              A chromatic celebration of deep maroon, burnt terracotta, and beaten antique gold. Crafted for high-voltage nuptials, midnight galas, and celebratory evenings where ordinary clothing ceases to suffice.
+            </p>
+
+            <div class="festive-swatches-row">
+              <div class="festive-swatch-item">
+                <span class="f-dot" style="background-color: #572B37;"></span>
+                <span class="f-label">Deep Maroon</span>
+              </div>
+              <div class="festive-swatch-item">
+                <span class="f-dot" style="background-color: #A34F37;"></span>
+                <span class="f-label">Burnt Terracotta</span>
+              </div>
+              <div class="festive-swatch-item">
+                <span class="f-dot" style="background-color: #D99B35;"></span>
+                <span class="f-label">Muted Marigold</span>
+              </div>
+            </div>
+
+            <div class="festive-actions">
+              <a href="festive-collection.html" class="btn btn-terracotta">SHOP THE FESTIVE EDIT</a>
+              <a href="contact.html" class="btn btn-outline-white" style="margin-left: 1rem;">BOOK COUTURE APPOINTMENT</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION F: STYLE JOURNAL
+         ========================================================================== -->
+    <section class="journal-section" aria-labelledby="journal-heading">
+      <div class="container-wide">
+        <div class="section-header-editorial">
+          <div>
+            <span class="eyebrow">THE ATELIER DISPATCH</span>
+            <h2 id="journal-heading" class="section-title">Style Journal</h2>
+            <p class="section-subtitle">Critical essays on contemporary Indian aesthetics, drape theory, and material culture.</p>
+          </div>
+          <a href="journal.html" class="editorial-link">
+            READ ALL ARTICLES
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="journal-grid">
+          
+          <!-- Article 1 -->
+          <article class="journal-card">
+            <a href="journal.html#article-1" class="journal-visual">
+              <img src="https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&w=800&q=85" alt="The New Language of Indian Fashion" loading="lazy">
+            </a>
+            <div class="journal-meta">
+              <span>ESSAY</span>
+              <span>·</span>
+              <span>6 MIN READ</span>
+            </div>
+            <h3 class="journal-title">
+              <a href="journal.html#article-1">The New Language of Indian Fashion</a>
+            </h3>
+            <p class="journal-excerpt">
+              How young Indian designers are stripping away excess embellishment to celebrate sculptural silhouettes, raw geometry, and pure fabric integrity.
+            </p>
+            <a href="journal.html#article-1" class="editorial-link">READ ESSAY &rarr;</a>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="journal-card">
+            <a href="journal.html#article-2" class="journal-visual">
+              <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=85" alt="A Modern Take on Traditional Dressing" loading="lazy">
+            </a>
+            <div class="journal-meta">
+              <span>STYLE GUIDE</span>
+              <span>·</span>
+              <span>5 MIN READ</span>
+            </div>
+            <h3 class="journal-title">
+              <a href="journal.html#article-2">A Modern Take on Traditional Dressing</a>
+            </h3>
+            <p class="journal-excerpt">
+              Why the contemporary co-ord set, the trench-coat kurta, and the one-minute pre-draped saree are redefining ceremonial dressing for the global diaspora.
+            </p>
+            <a href="journal.html#article-2" class="editorial-link">READ ESSAY &rarr;</a>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="journal-card">
+            <a href="journal.html#article-3" class="journal-visual">
+              <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=800&q=85" alt="Colours That Tell Stories" loading="lazy">
+            </a>
+            <div class="journal-meta">
+              <span>MATERIAL ARCHIVE</span>
+              <span>·</span>
+              <span>7 MIN READ</span>
+            </div>
+            <h3 class="journal-title">
+              <a href="journal.html#article-3">Colours That Tell Stories</a>
+            </h3>
+            <p class="journal-excerpt">
+              Unpacking the cultural resonance of Burnt Terracotta, Sindoor Maroon, and Botanical Marigold through centuries of South Asian artistic expression.
+            </p>
+            <a href="journal.html#article-3" class="editorial-link">READ ESSAY &rarr;</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION G: BRAND PHILOSOPHY
+         ========================================================================== -->
+    <section class="philosophy-section" aria-labelledby="philosophy-heading">
+      <div class="container-wide">
+        <div class="philosophy-container">
+          
+          <div class="philosophy-imagery">
+            <div class="philosophy-img-frame">
+              <img src="https://images.unsplash.com/photo-1518049362265-d5b2a6467637?auto=format&fit=crop&w=900&q=85" alt="Architectural Indian arches and light" loading="lazy">
+            </div>
+            <div class="philosophy-quote-box">
+              <p>"Culture is not a museum piece behind glass; it is living breath in every stitch."</p>
+            </div>
+          </div>
+
+          <div class="philosophy-content">
+            <span class="eyebrow">THE MANIFESTO</span>
+            <h2 id="philosophy-heading" class="philosophy-headline">
+              TRADITION IS NOT STATIC.<br>IT EVOLVES.
+            </h2>
+            <p class="philosophy-copy">
+              Rangrez Studio was founded on an unapologetic belief: Indian ethnic dressing does not require Western validation to feel modern, nor does it require antiquated nostalgia to remain authentic.
+            </p>
+            <p class="philosophy-copy">
+              We look at our historical costumes — the sweeping angrakhas of Awadh, the asymmetric drapes of the Konkan coast, the crisp kalis of Rajasthan — not as immutable dogma, but as an inexhaustible library of spatial design. We engineer garments that breathe in Mumbai humidity, move with New York pacing, and command reverence in London ballrooms.
+            </p>
+            <span class="philosophy-signature">— Meera Rangnekar, Creative Director</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION H: CUSTOMER STORIES
+         ========================================================================== -->
+    <section class="testimonials-section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header-editorial" style="justify-content: center; text-align: center; margin-bottom: 3.5rem;">
+          <div>
+            <span class="eyebrow">PATRON VOICES</span>
+            <h2 id="testimonials-heading" class="section-title">Customer Stories</h2>
+            <p class="section-subtitle" style="margin: 0 auto;">Words from discerning collectors and women of culture who wear Rangrez Studio.</p>
+          </div>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <!-- Testimonial 1 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "The Noorani Chanderi Kurta has completely changed how I dress for gallery dinners. The fabric has an ethereal translucence without sacrificing structure. It feels regal yet completely nonchalant."
+            </p>
+            <div class="testimonial-author-row">
+              <div class="author-avatar">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=85" alt="Ananya Mehta" loading="lazy">
+              </div>
+              <div>
+                <span class="author-name">Ananya Mehta</span>
+                <span class="author-role">Architect &amp; Design Curator, New Delhi</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "I wore the Sitara Pre-Draped Saree to my sister's reception in Florence. It packs like a dream, took 60 seconds to slip into, and elicited nonstop compliments from Italian designers."
+            </p>
+            <div class="testimonial-author-row">
+              <div class="author-avatar">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=85" alt="Devika Rao" loading="lazy">
+              </div>
+              <div>
+                <span class="author-name">Devika Rao</span>
+                <span class="author-role">Independent Film Producer, Mumbai &amp; London</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "The Banarasi Trench Jacket is a triumph. The kadwa weave has weight and pedigree, yet the cut belongs on an international runway. Rangrez understands modern Indian luxury better than anyone."
+            </p>
+            <div class="testimonial-author-row">
+              <div class="author-avatar">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=85" alt="Rohini Sen" loading="lazy">
+              </div>
+              <div>
+                <span class="author-name">Rohini Sen</span>
+                <span class="author-role">Creative Director, Singapore</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION I: NEWSLETTER
+         ========================================================================== -->
+    <section class="newsletter-section" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="newsletter-box">
+          <span class="eyebrow eyebrow-light">THE ATELIER CIRCLE</span>
+          <h2 id="newsletter-heading" class="newsletter-headline">LET'S KEEP THE COLOURS FLOWING.</h2>
+          <p class="newsletter-sub">
+            Join our private dispatch to receive seasonal lookbooks, invitation-only salon trunk shows, and archival textile essays before public releases.
+          </p>
+
+          <form class="newsletter-form" id="homepage-newsletter-form" novalidate>
+            <input type="email" class="newsletter-input" placeholder="Enter your email address" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-terracotta">JOIN THE ATELIER</button>
+          </form>
+
+          <div class="newsletter-feedback" aria-live="polite"></div>
+          <p class="newsletter-disclaimer">We respect your privacy. Fictional newsletter demonstration.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       SECTION J: FOOTER
+       ========================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container-wide">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Wordmark & Manifesto -->
+        <div class="footer-brand-col">
+          <span class="footer-wordmark">RANGREZ STUDIO</span>
+          <span class="footer-tagline">ROOTED IN CULTURE. MADE FOR NOW.</span>
+          <p class="footer-manifesto">
+            An award-winning contemporary Indian couture atelier celebrating generational handloom weaves, master zardozi embroidery, and architectural silhouettes.
+          </p>
+          <p class="footer-flagships">
+            <strong>FLAGSHIP ATELIERS:</strong><br>
+            Kalka Das Marg, Mehrauli, New Delhi · 110030<br>
+            Ropewalk Lane, Kala Ghoda, Mumbai · 400001
+          </p>
+        </div>
+
+        <!-- Col 1: Shop -->
+        <div class="footer-col">
+          <h3 class="footer-col-title">SHOP SILHOUETTES</h3>
+          <ul class="footer-links">
+            <li><a href="shop.html" class="footer-link">The Complete Catalogue</a></li>
+            <li><a href="new-arrivals.html" class="footer-link">The New India Edit</a></li>
+            <li><a href="contemporary-ethnic.html" class="footer-link">Contemporary Ethnic</a></li>
+            <li><a href="festive-collection.html" class="footer-link">Festive Stories</a></li>
+            <li><a href="shop.html?category=kurtas" class="footer-link">Designer Kurtas</a></li>
+            <li><a href="shop.html?category=sarees" class="footer-link">Modern Sarees</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: The Atelier -->
+        <div class="footer-col">
+          <h3 class="footer-col-title">THE ATELIER</h3>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">Our Story &amp; Ethos</a></li>
+            <li><a href="about.html#textile-heritage" class="footer-link">Textile Heritage</a></li>
+            <li><a href="about.html#master-artisans" class="footer-link">Master Artisans</a></li>
+            <li><a href="journal.html" class="footer-link">Style Journal</a></li>
+            <li><a href="about.html#timeline" class="footer-link">Atelier Milestones</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Client Concierge -->
+        <div class="footer-col">
+          <h3 class="footer-col-title">CLIENT CONCIERGE</h3>
+          <ul class="footer-links">
+            <li><a href="contact.html" class="footer-link">Bespoke Appointments</a></li>
+            <li><a href="contact.html#locations" class="footer-link">Atelier Visits</a></li>
+            <li><a href="cart.html" class="footer-link">Shopping Bag</a></li>
+            <li><a href="contact.html#faq" class="footer-link">Shipping &amp; Alterations</a></li>
+            <li><a href="contact.html#faq" class="footer-link">Care Guide</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Connect & Privileges -->
+        <div class="footer-col">
+          <h3 class="footer-col-title">CONNECT</h3>
+          <p style="font-size: 0.85rem; color: rgba(233, 216, 197, 0.7); line-height: 1.5; margin-bottom: 1rem;">
+            Follow our seasonal runway presentations and atelier reels.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://pinterest.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><path d="M8 12c0 2 2 3 2 3s-.3 1.2-.5 2.1c-.2.8-.7 1.9-1.5 2.9"></path></svg>
+            </a>
+          </div>
+          <p style="font-size: 0.75rem; color: var(--color-sand-muted); margin-top: 1.5rem;">
+            Concierge Desk:<br>
+            <span style="color: var(--color-sand);">concierge@rangrezstudio.com</span>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 RANGREZ STUDIO. All rights reserved. Sample 04 Contemporary Indian Luxury Collection.</span>
+        <div class="footer-legal-links">
+          <a href="contact.html#faq">Terms &amp; Bespoke Ordering</a>
+          <a href="contact.html#faq">Privacy &amp; Data Ethics</a>
+          <a href="contact.html#faq">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Homepage Product Grid Hydration -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const grid = document.getElementById("homepage-featured-grid");
+      if (grid && typeof RANGREZ_PRODUCTS !== "undefined") {
+        const featured = RANGREZ_PRODUCTS.filter(p => p.isFeatured).slice(0, 6);
+        const controller = new CatalogueController();
+        grid.innerHTML = featured.map(p => controller.createProductCardHTML(p)).join("");
+        if (window.rangrezCart) window.rangrezCart.updateWishlistButtons();
+      }
+    });
+  </script>
+
+</body>
+</html>

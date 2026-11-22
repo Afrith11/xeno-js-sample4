@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | RANGREZ STUDIO Contemporary Indian Couture</title>
+  <meta name="description" content="Handcrafted luxury Indian silhouette at Rangrez Studio. Pure handloom weaves, master zardozi embroidery, and modern architectural tailoring.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪷</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" role="complementary" aria-label="Announcement">
+    <span>CELEBRATING THE ART OF INDIAN DRESSING.</span>
+  </aside>
+
+  <!-- Sticky Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      
+      <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open mobile navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav class="header-nav-left" aria-label="Primary Navigation">
+        <a href="shop.html" class="nav-link">Discover</a>
+        <a href="new-arrivals.html" class="nav-link">New Arrivals</a>
+        <a href="contemporary-ethnic.html" class="nav-link">Clothing</a>
+        <a href="festive-collection.html" class="nav-link">Collections</a>
+      </nav>
+
+      <div class="header-brand-center">
+        <a href="index.html" class="brand-link" aria-label="Rangrez Studio Home">
+          <span class="brand-wordmark">RANGREZ STUDIO</span>
+          <span class="brand-wordmark-sub">COUTURE · ATELIER</span>
+        </a>
+      </div>
+
+      <div class="header-nav-right">
+        <button type="button" class="header-action-btn open-search-trigger" aria-label="Search silhouettes">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span class="header-action-label">Search</span>
+        </button>
+
+        <button type="button" class="header-action-btn open-wishlist-trigger" aria-label="View Saved Wishlist">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span class="header-action-label">Wishlist</span>
+          <span class="badge-count wishlist-count-badge" style="display: none;">0</span>
+        </button>
+
+        <button type="button" class="header-action-btn open-cart-trigger" aria-label="Shopping Bag">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="header-action-label">Bag</span>
+          <span class="badge-count cart-count-badge" style="display: none;">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <span class="brand-wordmark" style="font-size: 1.15rem;">RANGREZ STUDIO</span>
+      <button type="button" class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="shop.html" class="mobile-nav-link">Shop All</a></li>
+      <li><a href="new-arrivals.html" class="mobile-nav-link">The New India Edit</a></li>
+      <li><a href="contemporary-ethnic.html" class="mobile-nav-link">Contemporary Ethnic</a></li>
+      <li><a href="festive-collection.html" class="mobile-nav-link">Festive Stories</a></li>
+      <li><a href="about.html" class="mobile-nav-link">Our Story &amp; Atelier</a></li>
+      <li><a href="journal.html" class="mobile-nav-link">Style Journal</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Concierge &amp; Appointments</a></li>
+      <li><a href="cart.html" class="mobile-nav-link">Shopping Bag (<span class="cart-count-badge">0</span>)</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <span class="mobile-concierge-phone">BESPOKE CONCIERGE: +91 11 4982 7100</span>
+      <p class="mobile-atelier-loc">Ateliers in Mehrauli, New Delhi &amp; Kala Ghoda, Mumbai.</p>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="container-wide" style="border-bottom: 1px solid var(--color-border);">
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <ul class="breadcrumb-list">
+          <li><a href="index.html">Home</a></li>
+          <li class="breadcrumb-sep">/</li>
+          <li><a href="shop.html">Shop All</a></li>
+          <li class="breadcrumb-sep">/</li>
+          <li id="p-breadcrumb-category">Category</li>
+          <li class="breadcrumb-sep">/</li>
+          <li class="breadcrumb-current" id="p-breadcrumb-title">Product Title</li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Product Detail Layout -->
+    <section class="container-wide">
+      <div class="product-detail-layout">
+        
+        <!-- Sticky Gallery Column -->
+        <div class="p-gallery-sticky">
+          <div class="p-gallery-main" id="main-image-wrap">
+            <img src="" alt="Main silhouette preview" id="p-main-image" fetchpriority="high">
+          </div>
+          <div class="p-gallery-thumbs" id="p-thumbnails-container">
+            <!-- Thumbs injected via JS -->
+          </div>
+        </div>
+
+        <!-- Product Information Column -->
+        <div class="p-info">
+          
+          <span class="p-collection-badge" id="p-collection-badge">THE NEW INDIA EDIT</span>
+          <h1 class="p-title" id="p-title">Product Title</h1>
+
+          <div class="p-meta-bar">
+            <span class="p-rating-stars" id="p-rating">★ 4.9 (38 Reviews)</span>
+            <span class="p-sku" id="p-sku">SKU: RG-2026-01</span>
+          </div>
+
+          <div class="p-price-block">
+            <span class="p-main-price" id="p-price">₹18,500</span>
+            <span class="p-orig-price" id="p-orig-price">₹22,000</span>
+            <span class="p-tax-tag">Inclusive of all taxes &amp; duties</span>
+          </div>
+
+          <p class="p-short-desc" id="p-description">
+            Artisanal silhouette description loading...
+          </p>
+
+          <!-- Colour Selector -->
+          <div class="p-option-group">
+            <div class="p-option-header">
+              <span class="p-option-title">COLOUR: <strong id="p-selected-color-name" style="color: var(--color-terracotta);">Terracotta</strong></span>
+            </div>
+            <div class="p-swatches" id="p-color-swatches">
+              <!-- Swatches injected via JS -->
+            </div>
+          </div>
+
+          <!-- Size Selector -->
+          <div class="p-option-group">
+            <div class="p-option-header">
+              <span class="p-option-title">SELECT SIZE:</span>
+              <button type="button" class="p-size-guide-trigger" id="open-size-guide-btn">Atelier Size &amp; Fit Guide</button>
+            </div>
+            <div class="p-sizes" id="p-size-options">
+              <!-- Size buttons injected via JS -->
+            </div>
+            <div class="p-stock-urgency" id="p-stock-urgency">
+              <span class="urgency-pulse"></span>
+              <span>Only 3 artisanal pieces remaining in this size.</span>
+            </div>
+          </div>
+
+          <!-- Quantity Stepper & Actions -->
+          <div class="p-actions-grid">
+            <div class="p-quantity-stepper">
+              <button type="button" class="p-stepper-btn" id="p-qty-minus" aria-label="Decrease quantity">&minus;</button>
+              <span class="p-stepper-val" id="p-qty-val">1</span>
+              <button type="button" class="p-stepper-btn" id="p-qty-plus" aria-label="Increase quantity">&plus;</button>
+            </div>
+
+            <button type="button" class="btn btn-primary" id="p-add-to-bag-btn" style="height: 50px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+              ADD TO SHOPPING BAG
+            </button>
+
+            <button type="button" class="p-wishlist-action-btn" id="p-wishlist-toggle-btn" aria-label="Add to wishlist">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            </button>
+          </div>
+
+          <!-- Atelier Guarantees Banner -->
+          <div style="background-color: var(--color-sand-light); border: 1px solid var(--color-border); border-radius: var(--radius-xs); padding: 1.25rem; margin: 1.5rem 0 2.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div style="font-size: 0.78rem; color: var(--color-brown); display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-terracotta)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              <span>Complimentary Express Insured Shipping</span>
+            </div>
+            <div style="font-size: 0.78rem; color: var(--color-brown); display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-terracotta)" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+              <span>Complimentary In-Atelier Alterations</span>
+            </div>
+          </div>
+
+          <!-- Luxury Accordion Details -->
+          <div class="p-accordion">
+            
+            <!-- Tab 1 -->
+            <div class="accordion-tab is-open">
+              <button type="button" class="accordion-trigger">
+                <span>01. SILHOUETTE &amp; CRAFTSMANSHIP</span>
+                <span class="accordion-icon">&plus;</span>
+              </button>
+              <div class="accordion-content" id="p-tab-craft">
+                Hand-cut and assembled by generational artisans. Features asymmetric tailoring, concealed seams, and signature metallic button finishes.
+              </div>
+            </div>
+
+            <!-- Tab 2 -->
+            <div class="accordion-tab">
+              <button type="button" class="accordion-trigger">
+                <span>02. WEAVER HERITAGE &amp; TEXTILE STORY</span>
+                <span class="accordion-icon">&plus;</span>
+              </button>
+              <div class="accordion-content" id="p-tab-fabric">
+                Crafted from hand-spun silk yarns sourced from generational clusters. Dyed using earth-friendly botanical mineral pigments that respect water conservation.
+              </div>
+            </div>
+
+            <!-- Tab 3 -->
+            <div class="accordion-tab">
+              <button type="button" class="accordion-trigger">
+                <span>03. SIZE, FIT &amp; MODEL MEASUREMENTS</span>
+                <span class="accordion-icon">&plus;</span>
+              </button>
+              <div class="accordion-content" id="p-tab-model">
+                Model is 5'9" (175 cm), bust 33", waist 26", wearing size S. Relaxed yet structured silhouette with 2-inch inner margins for future adjustments.
+              </div>
+            </div>
+
+            <!-- Tab 4 -->
+            <div class="accordion-tab">
+              <button type="button" class="accordion-trigger">
+                <span>04. SHIPPING, EXCHANGES &amp; AT-HOME ALTERATIONS</span>
+                <span class="accordion-icon">&plus;</span>
+              </button>
+              <div class="accordion-content">
+                Every Rangrez garment includes complimentary express shipping across India (2-4 business days) and insured international delivery (5-7 business days). Enjoy 14-day seamless size exchanges and complimentary alterations at our New Delhi and Mumbai flagship ateliers.
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Complete The Look / Cross Sell -->
+    <section style="padding: 4rem 0; background-color: var(--color-sand-light); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container-wide">
+        <div class="section-header-editorial">
+          <div>
+            <span class="eyebrow">CURATED ENSEMBLE</span>
+            <h2 class="section-title">Pairs Beautifully With</h2>
+          </div>
+          <span style="font-size: 0.85rem; color: var(--color-text-secondary);">Styled by the Rangrez Creative Direction Team</span>
+        </div>
+
+        <div class="products-grid" id="complete-look-grid">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Size Guide Modal -->
+  <div class="size-guide-modal" id="size-guide-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="qv-backdrop" onclick="closeSizeGuide()"></div>
+    <div class="size-guide-dialog">
+      <button type="button" class="qv-close-btn" onclick="closeSizeGuide()">&times;</button>
+      <span class="eyebrow">ATELIER SIZING SYSTEM</span>
+      <h2 style="font-family: var(--font-serif); font-size: 2rem; color: var(--color-brown); margin-bottom: 0.5rem;">Size &amp; Fit Guide</h2>
+      <p style="font-size: 0.88rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">
+        All measurements reflect body measurements in inches. Rangrez garments feature 2-inch hidden tailoring margins to accommodate custom alterations.
+      </p>
+
+      <table class="size-table">
+        <thead>
+          <tr>
+            <th>SIZE</th>
+            <th>BUST (IN)</th>
+            <th>WAIST (IN)</th>
+            <th>HIP (IN)</th>
+            <th>SHOULDER</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>XS</strong></td>
+            <td>32 - 33</td>
+            <td>25 - 26</td>
+            <td>35 - 36</td>
+            <td>14.0"</td>
+          </tr>
+          <tr>
+            <td><strong>S</strong></td>
+            <td>34 - 35</td>
+            <td>27 - 28</td>
+            <td>37 - 38</td>
+            <td>14.5"</td>
+          </tr>
+          <tr>
+            <td><strong>M</strong></td>
+            <td>36 - 37</td>
+            <td>29 - 30</td>
+            <td>39 - 40</td>
+            <td>15.0"</td>
+          </tr>
+          <tr>
+            <td><strong>L</strong></td>
+            <td>38 - 40</td>
+            <td>31 - 33</td>
+            <td>41 - 43</td>
+            <td>15.5"</td>
+          </tr>
+          <tr>
+            <td><strong>XL</strong></td>
+            <td>41 - 43</td>
+            <td>34 - 36</td>
+            <td>44 - 46</td>
+            <td>16.0"</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="background-color: var(--color-white); padding: 1.25rem; border: 1px solid var(--color-border); border-radius: var(--radius-xs);">
+        <h4 style="font-size: 0.82rem; font-weight: 700; color: var(--color-brown); margin-bottom: 0.35rem;">BESPOKE TAILORING ASSISTANCE:</h4>
+        <p style="font-size: 0.8rem; color: var(--color-text-secondary); line-height: 1.5;">
+          Uncertain of your exact fit? Contact our Atelier Concierge on WhatsApp at <strong>+91 11 4982 7100</strong> for virtual sizing consultations.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container-wide">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <span class="footer-wordmark">RANGREZ STUDIO</span>
+          <span class="footer-tagline">ROOTED IN CULTURE. MADE FOR NOW.</span>
+          <p class="footer-manifesto">
+            An award-winning contemporary Indian couture atelier celebrating generational handloom weaves, master zardozi embroidery, and architectural silhouettes.
+          </p>
+          <p class="footer-flagships">
+            <strong>FLAGSHIP ATELIERS:</strong><br>
+            Kalka Das Marg, Mehrauli, New Delhi · 110030<br>
+            Ropewalk Lane, Kala Ghoda, Mumbai · 400001
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">SHOP SILHOUETTES</h3>
+          <ul class="footer-links">
+            <li><a href="shop.html" class="footer-link">The Complete Catalogue</a></li>
+            <li><a href="new-arrivals.html" class="footer-link">The New India Edit</a></li>
+            <li><a href="contemporary-ethnic.html" class="footer-link">Contemporary Ethnic</a></li>
+            <li><a href="festive-collection.html" class="footer-link">Festive Stories</a></li>
+            <li><a href="shop.html?category=kurtas" class="footer-link">Designer Kurtas</a></li>
+            <li><a href="shop.html?category=sarees" class="footer-link">Modern Sarees</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">THE ATELIER</h3>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">Our Story &amp; Ethos</a></li>
+            <li><a href="about.html#textile-heritage" class="footer-link">Textile Heritage</a></li>
+            <li><a href="about.html#master-artisans" class="footer-link">Master Artisans</a></li>
+            <li><a href="journal.html" class="footer-link">Style Journal</a></li>
+            <li><a href="about.html#timeline" class="footer-link">Atelier Milestones</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">CLIENT CONCIERGE</h3>
+          <ul class="footer-links">
+            <li><a href="contact.html" class="footer-link">Bespoke Appointments</a></li>
+            <li><a href="contact.html#locations" class="footer-link">Atelier Visits</a></li>
+            <li><a href="cart.html" class="footer-link">Shopping Bag</a></li>
+            <li><a href="contact.html#faq" class="footer-link">Shipping &amp; Alterations</a></li>
+            <li><a href="contact.html#faq" class="footer-link">Care Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">CONNECT</h3>
+          <p style="font-size: 0.85rem; color: rgba(233, 216, 197, 0.7); line-height: 1.5; margin-bottom: 1rem;">
+            Follow our seasonal runway presentations and atelier reels.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://pinterest.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><path d="M8 12c0 2 2 3 2 3s-.3 1.2-.5 2.1c-.2.8-.7 1.9-1.5 2.9"></path></svg>
+            </a>
+          </div>
+          <p style="font-size: 0.75rem; color: var(--color-sand-muted); margin-top: 1.5rem;">
+            Concierge Desk:<br>
+            <span style="color: var(--color-sand);">concierge@rangrezstudio.com</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 RANGREZ STUDIO. All rights reserved. Sample 04 Contemporary Indian Luxury Collection.</span>
+        <div class="footer-legal-links">
+          <a href="contact.html#faq">Terms &amp; Bespoke Ordering</a>
+          <a href="contact.html#faq">Privacy &amp; Data Ethics</a>
+          <a href="contact.html#faq">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Product Details Hydration & Interactions Script -->
+  <script>
+    let currentProduct = null;
+    let selectedSize = "S";
+    let selectedColor = "";
+    let selectedQuantity = 1;
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. Get ID from URL query string
+      const urlParams = new URLSearchParams(window.location.search);
+      const prodId = urlParams.get("id") || "rg-01";
+      currentProduct = getProductById(prodId);
+
+      renderProductDetails(currentProduct);
+      setupAccordions();
+      setupQuantityControls();
+      setupSizeGuide();
+      renderCompleteTheLook(currentProduct);
+    });
+
+    function renderProductDetails(p) {
+      document.title = `${p.name} | RANGREZ STUDIO Couture`;
+
+      // Breadcrumb
+      document.getElementById("p-breadcrumb-category").textContent = p.categoryLabel;
+      document.getElementById("p-breadcrumb-title").textContent = p.name;
+
+      // Meta
+      document.getElementById("p-collection-badge").textContent = p.collection ? p.collection.toUpperCase() : "THE 2026 EDIT";
+      document.getElementById("p-title").textContent = p.name;
+      document.getElementById("p-sku").textContent = `SKU: ${p.id.toUpperCase()}-2026`;
+      document.getElementById("p-rating").textContent = `★ ${p.rating} (${p.reviewsCount} Patron Reviews)`;
+
+      // Price
+      document.getElementById("p-price").textContent = formatINR(p.price);
+      const origEl = document.getElementById("p-orig-price");
+      if (p.originalPrice && p.originalPrice > p.price) {
+        origEl.textContent = formatINR(p.originalPrice);
+        origEl.style.display = "inline";
+      } else {
+        origEl.style.display = "none";
+      }
+
+      document.getElementById("p-description").textContent = p.description;
+
+      // Gallery Main Image & Thumbnails
+      const mainImg = document.getElementById("p-main-image");
+      mainImg.src = p.images[0];
+      mainImg.alt = p.name;
+
+      const thumbsContainer = document.getElementById("p-thumbnails-container");
+      thumbsContainer.innerHTML = p.images.map((img, i) => `
+        <div class="p-thumb ${i === 0 ? "is-active" : ""}" data-img-index="${i}">
+          <img src="${img}" alt="${p.name} view ${i + 1}" loading="lazy">
+        </div>
+      `).join("");
+
+      thumbsContainer.querySelectorAll(".p-thumb").forEach(thumb => {
+        thumb.addEventListener("click", () => {
+          const idx = thumb.getAttribute("data-img-index");
+          mainImg.src = p.images[idx];
+          thumbsContainer.querySelectorAll(".p-thumb").forEach(t => t.classList.remove("is-active"));
+          thumb.classList.add("is-active");
+        });
+      });
+
+      // Colors
+      selectedColor = p.colors[0]?.name || "Standard";
+      document.getElementById("p-selected-color-name").textContent = selectedColor;
+      const swatchesContainer = document.getElementById("p-color-swatches");
+      swatchesContainer.innerHTML = p.colors.map((c, i) => `
+        <button type="button" class="p-swatch-btn ${i === 0 ? "is-active" : ""}" style="background-color: ${c.hex};" data-color-name="${c.name}" title="${c.name}"></button>
+      `).join("");
+
+      swatchesContainer.querySelectorAll(".p-swatch-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          selectedColor = btn.getAttribute("data-color-name");
+          document.getElementById("p-selected-color-name").textContent = selectedColor;
+          swatchesContainer.querySelectorAll(".p-swatch-btn").forEach(b => b.classList.remove("is-active"));
+          btn.classList.add("is-active");
+        });
+      });
+
+      // Sizes
+      selectedSize = p.sizes[0] || "S";
+      const sizesContainer = document.getElementById("p-size-options");
+      sizesContainer.innerHTML = p.sizes.map((s, i) => `
+        <button type="button" class="p-size-btn ${i === 0 ? "is-active" : ""}" data-size-val="${s}">${s}</button>
+      `).join("");
+
+      sizesContainer.querySelectorAll(".p-size-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          selectedSize = btn.getAttribute("data-size-val");
+          sizesContainer.querySelectorAll(".p-size-btn").forEach(b => b.classList.remove("is-active"));
+          btn.classList.add("is-active");
+        });
+      });
+
+      // Accordion Texts
+      document.getElementById("p-tab-craft").innerHTML = `
+        <p>${p.craftStory}</p>
+        <p style="margin-top: 0.75rem;"><strong>Fabric Composition:</strong> ${p.fabric}</p>
+        <p style="margin-top: 0.25rem;"><strong>Care Recommendation:</strong> ${p.care}</p>
+      `;
+
+      document.getElementById("p-tab-fabric").innerHTML = `
+        <p><strong>Artisan Technique:</strong> Generational handloom weaving using certified natural silks and zari.</p>
+        <p style="margin-top: 0.5rem;">${p.craftStory}</p>
+        <p style="margin-top: 0.5rem; font-style: italic; color: var(--color-text-muted); font-size: 0.8rem;">*Fictional brand storytelling celebrating Indian textile craftsmanship.</p>
+      `;
+
+      document.getElementById("p-tab-model").innerHTML = `
+        <p>${p.modelInfo}</p>
+        <p style="margin-top: 0.5rem;">Need custom measurements? Our master tailors accommodate bespoke adjustments prior to dispatch.</p>
+      `;
+
+      // Wishlist button sync
+      const wishBtn = document.getElementById("p-wishlist-toggle-btn");
+      if (wishBtn && window.rangrezCart) {
+        const inWish = window.rangrezCart.isInWishlist(p.id);
+        wishBtn.classList.toggle("is-active", inWish);
+        wishBtn.querySelector("svg").setAttribute("fill", inWish ? "currentColor" : "none");
+
+        wishBtn.onclick = () => {
+          const added = window.rangrezCart.toggleWishlist(p.id);
+          wishBtn.classList.toggle("is-active", added);
+          wishBtn.querySelector("svg").setAttribute("fill", added ? "currentColor" : "none");
+        };
+      }
+
+      // Add to bag action
+      document.getElementById("p-add-to-bag-btn").onclick = () => {
+        if (window.rangrezCart) {
+          window.rangrezCart.addItem(p, selectedSize, selectedColor, selectedQuantity);
+        }
+      };
+    }
+
+    function setupQuantityControls() {
+      const valEl = document.getElementById("p-qty-val");
+      document.getElementById("p-qty-minus").onclick = () => {
+        if (selectedQuantity > 1) {
+          selectedQuantity--;
+          valEl.textContent = selectedQuantity;
+        }
+      };
+      document.getElementById("p-qty-plus").onclick = () => {
+        if (selectedQuantity < 10) {
+          selectedQuantity++;
+          valEl.textContent = selectedQuantity;
+        }
+      };
+    }
+
+    function setupAccordions() {
+      document.querySelectorAll(".accordion-trigger").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const tab = btn.closest(".accordion-tab");
+          tab.classList.toggle("is-open");
+        });
+      });
+    }
+
+    function setupSizeGuide() {
+      const openBtn = document.getElementById("open-size-guide-btn");
+      const modal = document.getElementById("size-guide-modal");
+      if (openBtn && modal) {
+        openBtn.addEventListener("click", () => {
+          modal.classList.add("is-open");
+          document.body.classList.add("modal-open");
+        });
+      }
+    }
+
+    function closeSizeGuide() {
+      const modal = document.getElementById("size-guide-modal");
+      if (modal) {
+        modal.classList.remove("is-open");
+        document.body.classList.remove("modal-open");
+      }
+    }
+
+    function renderCompleteTheLook(p) {
+      const container = document.getElementById("complete-look-grid");
+      if (!container || typeof RANGREZ_PRODUCTS === "undefined") return;
+
+      const others = RANGREZ_PRODUCTS.filter(item => item.id !== p.id).slice(0, 3);
+      const controller = new CatalogueController();
+      container.innerHTML = others.map(item => controller.createProductCardHTML(item)).join("");
+    }
+  </script>
+
+</body>
+</html>
